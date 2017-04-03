@@ -1,5 +1,6 @@
 .idea
 .DS_STORE
+scripts
 
 
 # Created by https://www.gitignore.io/api/node,visualstudiocode
