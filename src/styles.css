@@ -1,3 +1,5 @@
+/*background:url(https://photos-4.dropbox.com/t/2/AACwqXH7UiiQXg6xmjj8pEwnN43XFyfFC0iHYfDHUUs5Mg/12/6271974/png/32x32/3/1492293600/0/2/Stadthafen%20klein.png/EP_n1gQY0K8KIAcoBw/-Et2XzxPV2mMmJIU-umo0TGKpIxFdiS4Ie3tyVQOPHs?dl=0&size=1280x960&size_mode=3) no-repeat center bottom;   */
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -8,13 +10,25 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
-.footer {
+
+/*This wrapping container enables the image to be displayed behind the content */
+#wrap{    
+  position: absolute;
+  bottom:0;
+  min-height: 100%;  
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  background-image:url("https://photos-4.dropbox.com/t/2/AACwqXH7UiiQXg6xmjj8pEwnN43XFyfFC0iHYfDHUUs5Mg/12/6271974/png/32x32/3/1492293600/0/2/Stadthafen%20klein.png/EP_n1gQY0K8KIAcoBw/-Et2XzxPV2mMmJIU-umo0TGKpIxFdiS4Ie3tyVQOPHs?dl=0&size=1280x960&size_mode=3");   
+}
+
+#footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f5f5f5;
 }
 
 /*.footer .container {
