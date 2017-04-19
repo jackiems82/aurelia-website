@@ -8,10 +8,10 @@ export class App {
 
     config.map([
       { route: ['', 'home'],  title: 'Home',        name: 'home',         moduleId: 'home' },
-      { route: 'details',     title: 'Details',     name: 'boardDetails', moduleId: 'board-details' },
-      { route: 'contact',     title: 'Contact',     name: 'contact',      moduleId: 'contact' },
-      { route: 'impressum',   title: 'Impressum',   name: 'impressum',    moduleId: 'impressum.html' },
-      { route: 'disclaimer',  title: 'Disclaimer',  name: 'disclaimer',   moduleId: 'disclaimer.html' }
+      { route: 'details/:id',     title: 'The boards',  name: 'boardDetails', moduleId: 'details/board-details' },
+      { route: 'contact',     title: 'Contact',     name: 'contact',      moduleId: 'misc/contact', nav:true },
+      { route: 'impressum',   title: 'Impressum',   name: 'impressum',    moduleId: 'misc/impressum.html', nav:true },
+      { route: 'disclaimer',  title: 'Disclaimer',  name: 'disclaimer',   moduleId: 'misc/disclaimer.html', nav:true }
     ]);
 
     this.router = router;

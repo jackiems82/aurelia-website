@@ -1,16 +1,16 @@
-<!-- HTML only custom copmonent with bindable property -->
-<template bindable="message">
+<template>
   
   <div id="footer">
-    <div class="container"> 
-      
+    <div class="container-fluid">      
       <div class="row col-md-12">
-        <!--${message}-->
-        <a route-href="route: impressum">Impressum</a>
-        <a route-href="route: contact">Contact</a>
-        <a route-href="route: disclaimer">Disclaimer</a>
-      </div>
-      
+
+        <ul class="list-inline">
+          <li><a class="hidden-xs" route-href="route: contact">Contact |</a></li>
+          <li><a class="hidden-xs" route-href="route: impressum">Impressum |</a></li>
+          <li><a class="hidden-xs" route-href="route: disclaimer">Disclaimer</a></li>
+        </ul>
+
+      </div>      
     </div>
   </div>
   

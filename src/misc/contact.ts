@@ -1,8 +1,8 @@
 import {autoinject} from 'aurelia-dependency-injection';
 import {ValidationController, ValidationControllerFactory, ValidationRules} from 'aurelia-validation';
-import {BootstrapFormRenderer} from './resources/elements/bootstrap-form-renderer'
+import {BootstrapFormRenderer} from '../resources/elements/bootstrap-form-renderer'
 
-import { WebApi } from './web-api';
+import { WebApi } from '../web-api';
 
 
 @autoinject

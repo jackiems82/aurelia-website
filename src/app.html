@@ -1,23 +1,21 @@
 <template>
   <require from="./styles.css"></require>
-  
-  <div id="wrap">
+ 
+  <!--<div id="wrap">     -->
+
+    <require from="./resources/elements/navigation.html"></require>  
+    <navigation router.bind="router"></navigation>   
+
     <div class="container">
-      <div class="row">
-        <!--<require from="./resources/elements/navigation.html"></require>  
-        <navigation></navigation>-->
-
         <div class="row col-md-12">
-
           <router-view></router-view>
-
-        </div>      
-      </div>
+        </div>
     </div>
-
 
     <require from="./resources/elements/footer.html"></require>
     <footer></footer> <!--message="Footer content"-->
-  </div>
+  <!--</div>-->
+   
+
 
 </template>
