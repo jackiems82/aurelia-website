@@ -46,3 +46,10 @@ body {
   justify-content:         space-between;
   
 }
+ .carousel-inner > .item > img,
+ .carousel-inner > .item > a > img {
+     display: block;
+     max-width: 100%;
+     margin: auto;
+     height: 400px !important;
+ }
