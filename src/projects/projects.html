@@ -2,28 +2,30 @@
   
   <div repeat.for="detail of boardDetails" class="container">
         <div class="row col-md-5 col-sm-offset-1">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li repeat.for="image of detail.images" data-target="#myCarousel" data-slide-to="${$index}" class="${$first ? 'active' : ''}"></li>
-            </ol>
+            <div id="myCarousel_${$index}" class="carousel slide" data-ride="carousel">
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div repeat.for="image of detail.images" class="item ${$first ? 'active' : ''}">
-                    <img src="${image.imageUrl}" alt="">
-                </div>    
-            </div>
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li repeat.for="image of detail.images" data-target="#myCarousel_${$parent.$index}" data-slide-to="${$index}" class="${$first ? 'active' : ''}"></li>
+                </ol>
 
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div repeat.for="image of detail.images" class="item ${$first ? 'active' : ''}">
+                        <img src="${image.imageUrl}" alt="">
+                    </div>    
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel_${$index}" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel_${$index}" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                
             </div>
         </div>
 

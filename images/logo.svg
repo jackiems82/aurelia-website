@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="80.273285mm"
+   height="67.100121mm"
+   viewBox="0 0 284.4329 237.75633"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="173.22754"
+     inkscape:cy="143.78157"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="1358"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-160.6413,-227.76976)">
+    <image
+       sodipodi:absref="C:\Users\matthias\Dropbox\_meins\Longboard\Logo.png"
+       y="227.76976"
+       x="161.1804"
+       id="image3344"
+       xlink:href="file:///C:/Users/matthias/Dropbox/_meins/Longboard/Logo.png"
+       style="image-rendering:optimizeQuality"
+       preserveAspectRatio="none"
+       height="237.75633"
+       width="283.35345" />
+    <g
+       id="g3347">
+      <path
+         style="fill:#000000"
+         d="M 279.51575,346.64792 160.6413,227.76976 l 22.79154,0 22.79154,0 42.07391,42.06354 42.07391,42.06353 0,-42.06353 0,-42.06354 12.48492,0 12.48493,0 0,42.06354 0,42.06353 42.07391,-42.06353 42.07391,-42.06354 22.79217,0 22.79216,0 -59.43663,59.43663 -59.43664,59.43663 59.43417,59.44153 59.43417,59.44154 -23.33953,0 -23.33953,0 -118.87446,-118.87817 z"
+         id="path3349"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
