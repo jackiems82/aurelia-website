@@ -4,18 +4,13 @@
   <!--<div id="wrap">     -->
 
     <require from="./resources/elements/navigation.html"></require>  
-    <navigation router.bind="router"></navigation>   
+    <navigation router.bind="router" test.bind="test"></navigation>   
 
-    <div class="container">
-        <div class="row col-md-12">
-          <router-view></router-view>
-        </div>
-    </div>
+    <router-view ></router-view>
 
     <require from="./resources/elements/footer.html"></require>
     <footer></footer> <!--message="Footer content"-->
+    
   <!--</div>-->
-   
-
 
 </template>

@@ -1,5 +1,7 @@
 export class WebApi{    
 
+    boardDetails: BoardDetails[];
+
     public sendEmail(to: string, message: string): void {
         alert("Sending " + message + " to " + to);
         // return new Promise(resolve=> resolve(true));
@@ -7,7 +9,8 @@ export class WebApi{
 
     public getImageDetails(): Promise<BoardDetails[]> {        
         return new Promise((resolve, reject) => {
-                resolve(boardDetails)
+            this.boardDetails = data;
+            resolve(this.boardDetails);
         });
     }    
 }
@@ -28,7 +31,7 @@ export class BoardDetails{
 }
 
 
-let boardDetails:BoardDetails[] =
+let data:BoardDetails[] =
     [{
         description: { header: "Board1" , text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus at eros sit amet mattis. Nullam sed massa velit. Aliquam non erat nec metus egestas eleifend et a orci. Quisque justo tellus, posuere id pellentesque id, euismod non nibh. Proin ut pellentesque mauris. Suspendisse potenti. Proin quis rhoncus est."
 

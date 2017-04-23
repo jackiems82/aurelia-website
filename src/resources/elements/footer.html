@@ -2,15 +2,19 @@
   
   <div id="footer">
     <div class="container-fluid">      
-      <div class="row col-md-12">
+      <div class="row col-md-10">
 
-        <ul class="list-inline">
-          <li><a class="hidden-xs" route-href="route: contact">Contact |</a></li>
-          <li><a class="hidden-xs" route-href="route: impressum">Impressum |</a></li>
-          <li><a class="hidden-xs" route-href="route: disclaimer">Disclaimer</a></li>
-        </ul>
+          <ul class="list-inline hidden-xs">
+            <li><a route-href="route: contact">Contact</a> &nbsp; |</li>
+            <li><a route-href="route: impressum">Impressum</a> &nbsp; |</li>
+            <li><a route-href="route: disclaimer">Disclaimer</a></li>
+          </ul>
 
-      </div>      
+      </div>   
+      <div class="row col-md-2">
+          <require from="./social-buttons.html"></require>
+          <social-buttons></social-buttons>
+      </div>   
     </div>
   </div>
   

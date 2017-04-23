@@ -1,6 +1,24 @@
 <!-- HTML only custom copmonent with bindable property -->
-<template bindable="router">
-  <nav class="navbar navbar-default navbar-fixed-top visible-xs">
+<template bindable="router, test">
+
+  <!-- Default NavBar -->
+  <nav class="nav hidden-xs main-navigation" role="navigation">
+      <div class="container">
+        <div class="row">
+          
+              <div class="col-md-1">
+                  <a class="navbar-brand logo" route-href="route: home"><img alt="Brand" src="images/logo.svg"></a>
+              </div>
+              <ul class="nav nav-pills nav-pills-lg col-md-10">
+                <li><a route-href="route: projects">Projects</a></li>
+                <li><a value.bind="test" route-href="route: about">${test}</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- NavBar for mobile displays -->
+  <nav class="navbar navbar-default navbar-fixed-top visible-xs" role="navigation">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">

@@ -1,8 +1,8 @@
 <template>
   
-  <div repeat.for="detail of boardDetails" class="container">
-        <div class="row col-md-5 col-sm-offset-1">
-            <div id="myCarousel_${$index}" class="carousel slide" data-ride="carousel">
+    <div class="container">
+        <div repeat.for="detail of boardDetails" class="row">
+            <div id="myCarousel_${$index}" class="carousel slide col-md-5 col-md-offset-1" data-ride="carousel">
 
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -27,13 +27,11 @@
                 </a>
                 
             </div>
-        </div>
 
-        <div class="row">
             <div class="col-md-5"><h3>${detail.description.header}</h3></div>
             <div class="col-md-5">${detail.description.text}</div>
 
         </div>
-    </div>
+    </div>       
 
 </template>

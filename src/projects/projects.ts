@@ -11,10 +11,14 @@ export class Projects{
     } 
 
     activate(){
-         return this.api.getImageDetails().then(result => {
-            this.boardDetails = result;
-            console.log("RESULT: ", result);
-        });
+        if (this.api.boardDetails)
+            this.boardDetails = this.api.boardDetails;
+        else{
+            return this.api.getImageDetails().then(result => {
+                this.boardDetails = result;
+                console.log("RESULT: ", result);
+            });
+        }
     }
  
 

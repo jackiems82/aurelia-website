@@ -80,10 +80,75 @@ body {
      height: 400px !important;
  }*/
 
+.main-navigation {
+  /* reduce margin by body bottom margin */
+  margin-top: -70px;
+}
+
 .navbar-brand {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
  .navbar-brand img {
-   height: 34px;
+    height: 30px;
  }
+ .logo img {
+   height: 44px !important;
+ }
+
+ .nav-pills-lg{
+    padding: 10px 0px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+ }
+
+/*** Home page image ***/
+ .home-wrapper{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: -100;
+    margin-top: -70px; 
+    height: 220px   
+}
+.home-wrapper img{
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    content:url("images/home_768.jpg");
+}
+
+/* For width 768px and larger: */
+@media only screen and (min-width: 768px) {
+    .home-wrapper { 
+        height: 400px; 
+    }
+    .home-wrapper img {      
+         content:url("images/home_992.jpg");
+    }
+}
+
+/* For width 992px and larger: */
+@media only screen and (min-width: 992px) {
+    .home-wrapper { 
+        height: 500px;
+    }    
+    .home-wrapper img {      
+        content:url("images/home_1200.jpg");
+    }
+}
+
+/* For width 1200px and larger: */
+@media only screen and (min-width: 1200px) {
+    .home-wrapper { 
+        height: 570px;
+    }
+    .home-wrapper img {      
+        content:url("images/home_1920.jpg");
+    }
+}
