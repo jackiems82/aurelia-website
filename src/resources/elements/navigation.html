@@ -5,13 +5,10 @@
   <nav class="nav hidden-xs main-navigation" role="navigation">
       <div class="container">
         <div class="row">
-          
-              <div class="col-md-1">
-                  <a class="navbar-brand logo" route-href="route: home"><img alt="Brand" src="images/logo.svg"></a>
-              </div>
-              <ul class="nav nav-pills nav-pills-lg col-md-10">
+              <a class="col-md-1 navbar-brand logo" route-href="route: home"><img alt="Brand" src="images/logo.svg"></a>
+              <ul class="col-sm-offset-1 col-md-offset-0 col-md-10 nav nav-pills nav-pills-lg">
                 <li><a route-href="route: projects">Projects</a></li>
-                <li><a value.bind="test" route-href="route: about">${test}</a></li>
+                <li><a route-href="route: about">About</a></li>
               </ul>
           </div>
       </div>
