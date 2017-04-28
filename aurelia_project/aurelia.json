@@ -12,7 +12,8 @@
     "displayName": "TypeScript",
     "fileExtension": ".ts",
     "dtsSource": [
-      "./custom_typings/**/*.d.ts"
+      "./custom_typings/**/*.d.ts",
+      "typings/**/*.d.ts"
     ],
     "source": "src/**/*.ts"
   },
@@ -141,6 +142,14 @@
             "main": "aurelia-validation",
             "path": "../node_modules/aurelia-validation/dist/amd",
             "resources": []
+          },
+          {
+            "name": "swiper",
+            "main": "dist/js/swiper.min.js",
+            "path": "../node_modules/swiper",
+            "resources": [
+              "dist/css/swiper.min.css"
+            ]
           }
         ]
       }

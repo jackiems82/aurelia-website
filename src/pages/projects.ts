@@ -12,13 +12,24 @@ export class Projects{
 
     activate(){
         if (this.api.boardDetails)
-            this.boardDetails = this.api.boardDetails;
+            return this.boardDetails = this.api.boardDetails;
         else{
             return this.api.getImageDetails().then(result => {
                 this.boardDetails = result;
                 console.log("RESULT: ", result);
             });
         }
+    }
+
+    attached() {
+        var mySwiper = new Swiper ('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            autoplay: 5000,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev'
+        })
     }
  
 
