@@ -9,50 +9,44 @@ body {
   background-color: #f3f3f3;
 }
 
-/*This wrapping container enables the image to be displayed behind the content */
-/*#wrap{
-  bottom:0;
+
+/****FOOTER****/
+
+/*This wrapping container holds the footer image */
+#wrap{
   width: 100%;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
-  background-image:url("images/footer2.png");
-}*/
+  background-image:url("images/footer3.png");
+}
+/*Used to provide some space for the footer image*/
+.footer-content{
+    position:relative;
+    height: 100px;
+    width: 100%;
+}
 
-
-/****FOOTER****/
-#footer .navbar{
-  position: absolute;
-  z-index: -100;
-  /*height is needed to stick footer to bottom*/
-  height: 10px;
-  /* override from boostrap */
-  border:0
+/*Bootom part of footer with links*/
+.footer-content ul {
+    position: absolute;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    margin-bottom:0;
+    bottom:0;
+}
+.footer-content li {
+    padding: 0;
 }
 .footer-content,
 .footer-content a {
     color: #f3f3f3;
 }
-.footer-content img{
-    bottom: 0;
-    height: auto;
-    max-width: 100%;
-    content:url("images/footer3.png");
-    z-index: -100;
-}
-/*Bootom part of footer with links*/
-.footer-content ul {
-    padding-left: 15px;
-    background-color: #515151;
-    padding-bottom: 20px;
-    margin-bottom:0;
-}
-.footer-content li {
-    padding: 0;
-}
 .footer-content a {
     padding: 15px 5px;
 }
+
+
 
 /*** Flexbox ***/
 /*.flex-container {
@@ -191,6 +185,10 @@ body {
         width: 480px;
         height: 320px;
     }
+    .footer-content{
+        height: 150px;
+        width: 100%;
+    }
 }
 /* For width 768px and larger: */
 @media only screen and (min-width: 768px) {
@@ -198,6 +196,10 @@ body {
         height: 400px;
         margin-top: -65px;
         background-size: cover;
+    }
+    .footer-content{
+        height: 200px;
+        width: 100%;
     }
 }
 /* For width 992px and larger: */
