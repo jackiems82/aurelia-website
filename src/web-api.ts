@@ -7,11 +7,24 @@ export class WebApi{
         // return new Promise(resolve=> resolve(true));
     }
 
-    public getImageDetails(): Promise<BoardDetails[]> {        
-        return new Promise((resolve, reject) => {
-            this.boardDetails = data;
-            resolve(this.boardDetails);
+    public getImageDetails(): Promise<BoardDetails[]> {  
+        let promise = new Promise((resolve, reject) => {
+            if(!this.boardDetails) {
+                this.boardDetails = data;
+                resolve(this.boardDetails);
+            }
+            else {
+                resolve(this.boardDetails);
+            }
         });
+
+        return promise;
+
+
+        // return new Promise((resolve, reject) => {
+        //     this.boardDetails = data;
+        //     resolve(this.boardDetails);
+        // });
     }    
 }
 
@@ -39,16 +52,20 @@ let data:BoardDetails[] =
         images: [
             {imageUrl:"", thumb:"images/2_3_320x480.jpg"},
             {imageUrl:"", thumb:"images/2_2_320x480.jpg"},
-            {imageUrl:"", thumb:"images/2_1_480x717.jpg"}
+            {imageUrl:"", thumb:"images/2_1_717x480.jpg"},
+            {imageUrl:"", thumb:"images/2_5_320x214.jpg"}
         ]
     },  {
         description: { header: "Board2" , text: "Lorem" +"</br>"+ "ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus at eros sit amet mattis. Nullam sed massa velit. Aliquam non erat nec metus egestas eleifend et a orci. Quisque justo tellus, posuere id pellentesque id, euismod non nibh. Proin ut pellentesque mauris."
 
 + "Suspendisse rhoncus nisl id dolor faucibus, pharetra pretium mi ornare." },
         images: [
-            {imageUrl:"", thumb:"images/2_3_320x480.jpg"},
-            {imageUrl:"", thumb:"images/2_2_320x480.jpg"},
-            {imageUrl:"", thumb:"images/2_1_320x214.jpg"}            
+            {imageUrl:"", thumb:"images/3_1_720x480.jpg"},
+            {imageUrl:"", thumb:"images/3_2_320x480.jpg"},
+            {imageUrl:"", thumb:"images/3_3_320x480.jpg"},           
+            {imageUrl:"", thumb:"images/3_4_320x480.jpg"},          
+            {imageUrl:"", thumb:"images/3_5_720x480.jpg"},        
+            {imageUrl:"", thumb:"images/3_6_720x480.jpg"},        
         ]
     }
     

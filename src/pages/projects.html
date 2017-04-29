@@ -10,20 +10,19 @@
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div repeat.for="image of detail.images" class="swiper-slide">
-                            <img src="${image.thumb}" alt="image">
+                            <!--<div class="swiper-zoom-container">-->
+                                <img data-src="${image.thumb}" class="swiper-lazy">
+                            <!--</div>-->
+                            <div class="swiper-lazy-preloader"></div>                            
                         </div>
                     </div>
                     <!-- If we need pagination -->
-                    <!--<div class="swiper-pagination"></div>-->
+                    <div class="swiper-pagination swiper-pagination-white"></div>
                     
                     <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    
-                    <!-- If we need scrollbar -->
-                    <!--<div class="swiper-scrollbar"></div>-->
+                    <div class="swiper-button-prev swiper-button-white hidden-xs hidden-sm"></div>
+                    <div class="swiper-button-next swiper-button-white hidden-xs hidden-sm"></div>
 
-                    
                 </div>
             </div>
 
