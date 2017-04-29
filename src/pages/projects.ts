@@ -32,7 +32,7 @@ export class Projects{
             preloadImages: false,
             lazyLoading: true,
             lazyLoadingInPrevNext: true,
-            
+            centeredSlides: true            
         })
     }
  

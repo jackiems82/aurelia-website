@@ -2,7 +2,7 @@
   
     <div class="container">
         <!-- Slider main container -->
-        <div repeat.for="detail of boardDetails" class="row details">
+        <div repeat.for="detail of boardDetails" class="row projects">
         
             <div class="col-md-5">
                 <div class="swiper-container">
@@ -26,8 +26,20 @@
                 </div>
             </div>
 
-            <div class="col-md-5"><h3>${detail.description.header}</h3></div>
-            <div class="col-md-5">${detail.description.text}</div>
+            <div class="col-md-6">
+                <h3 innerhtml.bind="detail.description.header"></h3>
+                <p innerhtml.bind="detail.description.text"></p>
+                </br>
+                <p><u>Stats</u></p>
+
+                <p innerhtml.bind="detail.description.statsText"></p>
+                <ul>
+                    <li show.bind="detail.description.size">Size: ${detail.description.size}</li>
+                    <li show.bind="detail.description.wheelBase">Wheelbase: ${detail.description.wheelBase}</li>
+                    <li show.bind="detail.description.concave">Concave: ${detail.description.concave}</li>
+                    <li show.bind="detail.description.kicks">Kicks: ${detail.description.kicks}</li>
+                </ul>
+            </div>
             
         </div>        
     </div>       

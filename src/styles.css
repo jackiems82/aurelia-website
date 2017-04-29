@@ -123,8 +123,11 @@ body {
 
 
 /***PROJECTS page***/
-.details {
+.projects {
     margin-bottom: 30px;
+}
+.projects h3 {
+    margin-top: 25px;
 }
 .swiper-container {
     /* height width ratio = 1.5 */
@@ -154,8 +157,8 @@ body {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    /*-webkit-align-items: center;    remove to have it same in FF*/
+    /*align-items: center;            remove to have it same in FF*/
     overflow: hidden;
     /*border: 1px solid #515151;*/
 }

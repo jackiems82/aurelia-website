@@ -36,6 +36,11 @@ export class ImageDetails{
 export class Description{
     header: string;
     text: string;
+    statsText: string;
+    size: string;
+    wheelBase: string;
+    concave: string;
+    kicks: string;
 }
 
 export class BoardDetails{
@@ -46,19 +51,31 @@ export class BoardDetails{
 
 let data:BoardDetails[] =
     [{
-        description: { header: "Board1" , text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus at eros sit amet mattis. Nullam sed massa velit. Aliquam non erat nec metus egestas eleifend et a orci. Quisque justo tellus, posuere id pellentesque id, euismod non nibh. Proin ut pellentesque mauris. Suspendisse potenti. Proin quis rhoncus est."
-
-+ "Suspendisse rhoncus nisl id dolor faucibus, pharetra pretium mi ornare. Maecenas rhoncus laoreet nulla, sit amet pharetra risus aliquet nec. Phasellus nec sagittis arcu, eu porttitor justo. Nulla vitae mi auctor nunc egestas tempus ut aliquam nunc. Nunc sem ex, condimentum eu elementum vitae, egestas imperdiet enim. Phasellus maximus erat ut mauris commodo fermentum. Ut ut erat ac dui egestas efficitur. Phasellus non maximus massa. Integer vitae ornare nisl. Curabitur auctor felis enim, eu commodo diam volutpat eu. Vestibulum eget orci sed elit pretium congue eget et tortor. Aenean sed egestas eros. In id arcu a est viverra laoreet at sit amet dui. Nullam euismod venenatis tempus." },
+        description: { 
+            header: "Freerider &quot;Haedge&quot;" , 
+            text: "My first dropped freerider. Producing&nbsp;a solid and stable deck was the target during the entire design process. That is also constituded by the bottom print which represents the harbour crane on &quot;Haedge Halbinsel&quot; with a flag of Rostock&#39;s heraldic animal, the griffin. The symbol on top reflects one of the braces that provide the crane its solidity. Due to its medium size, it is a great travel companion.",
+            statsText: "Combination of Baltic birch with a poplar core enforced with glas fibre. One sheet of maple veneer at the bottom produces a nice finish. The moderativly deep concave provides good control in turns.",
+            size: "9'' x 37''",
+            wheelBase:"?",
+            concave:"?",
+            kicks: ""
+        },
         images: [
             {imageUrl:"", thumb:"images/2_3_320x480.jpg"},
             {imageUrl:"", thumb:"images/2_2_320x480.jpg"},
             {imageUrl:"", thumb:"images/2_1_717x480.jpg"},
-            {imageUrl:"", thumb:"images/2_5_320x214.jpg"}
+            {imageUrl:"", thumb:"images/2_5_720x480.jpg"}
         ]
     },  {
-        description: { header: "Board2" , text: "Lorem" +"</br>"+ "ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus at eros sit amet mattis. Nullam sed massa velit. Aliquam non erat nec metus egestas eleifend et a orci. Quisque justo tellus, posuere id pellentesque id, euismod non nibh. Proin ut pellentesque mauris."
-
-+ "Suspendisse rhoncus nisl id dolor faucibus, pharetra pretium mi ornare." },
+        description: { 
+            header: "Mini Cruiser &quot;Mone&quot;" , 
+            text:"This is a modified design of my first mini cruiser. This one has a kick tail to increase ease of turns.",
+            statsText: "Combination of Baltic birch with a poplar core enforced with glas fibre. One sheet of maple veneer at the bottom produces a nice finish. The bottom print represents hibiscus blossoms and a peacock. On the top a grip job with a gecko.",
+            size: "8.2'' x 29.5''",
+            wheelBase:"",
+            concave:"",
+            kicks: ""
+        },
         images: [
             {imageUrl:"", thumb:"images/3_1_720x480.jpg"},
             {imageUrl:"", thumb:"images/3_2_320x480.jpg"},
