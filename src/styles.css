@@ -29,8 +29,6 @@ body {
   /* override from boostrap */
   border:0
 }
-
-
 .footer-content,
 .footer-content a {
     color: #f3f3f3;
@@ -114,17 +112,19 @@ body {
 
 
 /*** Home page image ***/
- .home-wrapper{
-    overflow: hidden;
-    z-index: -100;
+ .home-image{
+    overflow: visible;
     margin-top: -20px;
-    height: 200px
+    height: 200px;
+    width: 100%;
+    background:url("images/home_768.jpg") no-repeat;
+    background-size: cover;
 }
-.home-wrapper img{
+/*.home-image img {
     height: auto;
     max-width: 100%;
-    content:url("images/home_768.jpg");
-}
+    background:url("images/home_768.jpg") no-repeat;
+}*/
 
 
 
@@ -138,11 +138,12 @@ body {
     height: 435px;
     margin-top: 15px;
 }
+/*how to make it full screen zoom?*/
 .swiper-zoom-container {
     height: 700px;
     width: auto;
-        overflow: visible;
-        z-index: 100;
+    overflow: visible;
+    z-index: 100;
 }
 .swiper-slide {
     text-align: center;
@@ -181,11 +182,10 @@ body {
 
 /* For width 480px and larger: */
 @media only screen and (min-width: 480px) {
-    .home-wrapper {
+    .home-image {
         height: 300px;
-    }
-    .home-wrapper img {
-         content:url("images/home_992.jpg");
+        background:url("images/home_992.jpg") no-repeat;
+        background-size: cover;
     }
     .swiper-container {
         width: 480px;
@@ -194,22 +194,19 @@ body {
 }
 /* For width 768px and larger: */
 @media only screen and (min-width: 768px) {
-    .home-wrapper {
+    .home-image {
         height: 400px;
         margin-top: -65px;
-    }
-    .home-wrapper img {
-         content:url("images/home_992.jpg");
+        background-size: cover;
     }
 }
 /* For width 992px and larger: */
 @media only screen and (min-width: 992px) {
-    .home-wrapper {
+    .home-image {
         height: 450px;
         margin-top: -85px;
-    }
-    .home-wrapper img {
-        content:url("images/home_1200.jpg");
+        background:url("images/home_1200.jpg") no-repeat;
+        background-size: cover;
     }
 
     /*Push logo and navigation down on bigger screens*/
@@ -225,19 +222,19 @@ body {
 }
 /* For width 1200px and larger: */
 @media only screen and (min-width: 1200px) {
-    .home-wrapper {
+    .home-image {
         height: 500px;
-    }
-    .home-wrapper img {
-        content:url("images/home_1920.jpg");
+        background:url("images/home_1920.jpg") no-repeat;
+        background-size: cover;
     }
 }
 /* For width 1900px and larger: */
 @media only screen and (min-width: 1900px) {
-    .home-wrapper {
+    .home-image {
         height: 700px;
-    }
-    .home-wrapper img {
-        content:url("images/home.jpg");
+        background:url("images/home.jpg") no-repeat;
+        background-size: cover;
+            
+
     }
 }
