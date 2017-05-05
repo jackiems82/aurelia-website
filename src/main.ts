@@ -28,7 +28,7 @@ export function configure(aurelia: Aurelia) {
         backend: {                                  
           loadPath: './locales/{{lng}}/{{ns}}.json', 
         },
-        lng : 'de',
+        lng : window.navigator.language,
         attributes : aliases,
         fallbackLng : 'en',
         debug : true

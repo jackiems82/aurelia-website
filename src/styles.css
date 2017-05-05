@@ -113,6 +113,11 @@ body {
     width: 100%;
     background:url("images/home_768.jpg") no-repeat;
     background-size: cover;
+    border-bottom: 1px solid #515151;
+}
+.home-heading {
+    font-size: 4em;
+    margin-top: 50px;
 }
 /*.home-image img {
     height: auto;
@@ -132,7 +137,7 @@ body {
 .swiper-container {
     /* height width ratio = 1.5 */
     width: 290px;
-    height: 435px;
+    height: 290px;
     margin-top: 15px;
 }
 /*how to make it full screen zoom?*/
@@ -185,7 +190,7 @@ body {
         background-size: cover;
     }
     .swiper-container {
-        width: 480px;
+        width: 320px;
         height: 320px;
     }
     .footer-content{
@@ -204,6 +209,11 @@ body {
         height: 200px;
         width: 100%;
     }
+    .swiper-container {
+        margin-top: 30px;
+        width: 250px;
+        height: 250px;
+    }
 }
 /* For width 992px and larger: */
 @media only screen and (min-width: 992px) {
@@ -219,10 +229,12 @@ body {
     .main-navigation ul {
         margin-top:20px;
     }
-    .swiper-container {
-        margin-top: 30px;    
+    .projects {
+        margin-bottom: 60px;
+    }
+    .swiper-container {   
         width: 320px;
-        height: 480px;
+        height: 320px;
     }
 }
 /* For width 1200px and larger: */

@@ -7,6 +7,7 @@
     },
     "projects": {
         "structure": "<u>Aufbau</u>",    
-        "size": "Maße: "  
+        "size": "Maße: ",
+        "concave": "Konkave: "  
     }
 }
