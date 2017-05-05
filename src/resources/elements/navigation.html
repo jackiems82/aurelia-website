@@ -11,7 +11,7 @@
               <ul class="col-sm-offset-1 col-md-offset-0 col-md-10 list-inline nav-pills-lg">
                 <li repeat.for="row of router.navigation" show.bind="row.settings.isMainNav" 
                   class="${row.isActive ? 'active' : ''}">
-                  <a href.bind="row.href">${row.title}</a>
+                  <a href.bind="row.href" t.bind="row.settings.t">${row.title}</a>
                 </li>
               </ul>
           </div>

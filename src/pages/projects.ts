@@ -1,13 +1,20 @@
 import { WebApi, BoardDetails } from '../web-api';
 import { autoinject} from 'aurelia-framework';
 import {RouterConfiguration, Router} from 'aurelia-router';
+import {I18N} from 'aurelia-i18n';
+import * as Swiper from 'swiper'
 
 @autoinject
 export class Projects{
     router: Router;
     boardDetails: BoardDetails[];
 
-    constructor(private api: WebApi){
+    constructor(private api: WebApi, private i18n:I18N){
+        // i18n
+        //     .setLocale('en')
+        //     .then( () => {
+        // // locale is loaded
+        // });
     } 
 
     activate(){
@@ -33,7 +40,7 @@ export class Projects{
             lazyLoading: true,
             lazyLoadingInPrevNext: true,
             centeredSlides: true            
-        })
+        });
     }
  
 

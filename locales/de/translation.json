@@ -1,0 +1,12 @@
+{
+    "navigation": {
+        "projects": "Projekte",
+        "about" : "Info",
+        "impressum": "Impressum",
+        "disclaimer": "Disclaimer"
+    },
+    "projects": {
+        "structure": "<u>Aufbau</u>",    
+        "size": "Maße: "  
+    }
+}

@@ -30,11 +30,11 @@
                 <h3 innerhtml.bind="detail.description.header"></h3>
                 <p innerhtml.bind="detail.description.text"></p>
                 </br>
-                <p><u>Stats</u></p>
+                <span t="[html]projects.structure"></span>
 
-                <p innerhtml.bind="detail.description.statsText"></p>
+                <p innerhtml.bind="detail.description.structureText"></p>
                 <ul>
-                    <li show.bind="detail.description.size">Size: ${detail.description.size}</li>
+                    <li show.bind="detail.description.size" t="[prepend]projects.size">${detail.description.size}</li>
                     <li show.bind="detail.description.wheelBase">Wheelbase: ${detail.description.wheelBase}</li>
                     <li show.bind="detail.description.concave">Concave: ${detail.description.concave}</li>
                     <li show.bind="detail.description.kicks">Kicks: ${detail.description.kicks}</li>
