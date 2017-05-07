@@ -12,6 +12,7 @@ export class App {
       { route: 'about',       title: 'About',        name: 'about',        moduleId: 'pages/about.html', nav:true, settings: {isMainNav: true, t:'navigation.about'} },
       // { route: 'contact',     title: 'Contact',     name: 'contact',      moduleId: 'pages/contact' },
       { route: 'impressum',   title: 'Impressum',   name: 'impressum',    moduleId: 'pages/impressum.html', nav:true, settings: {t:'navigation.impressum'} },
+      { route: 'data-protection',   title: 'Data protection',   name: 'data-protection',    moduleId: 'pages/data-protection.html', nav:true, settings: {t:'navigation.data-protection'} },
       { route: 'disclaimer',  title: 'Disclaimer',  name: 'disclaimer',   moduleId: 'pages/disclaimer.html', nav:true, settings: {t:'navigation.disclaimer'} }
     ]);
 

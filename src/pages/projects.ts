@@ -1,7 +1,6 @@
 import { WebApi, BoardDetails } from '../web-api';
 import { autoinject} from 'aurelia-framework';
 import {RouterConfiguration, Router} from 'aurelia-router';
-import {I18N} from 'aurelia-i18n';
 import * as Swiper from 'swiper'
 
 @autoinject
@@ -9,13 +8,7 @@ export class Projects{
     router: Router;
     boardDetails: BoardDetails[];
 
-    constructor(private api: WebApi, private i18n:I18N){
-        // i18n
-        //     .setLocale('en')
-        //     .then( () => {
-        // // locale is loaded
-        // });
-    } 
+    constructor(private api: WebApi){} 
 
     activate(){
         // The 'return' should actually wait for the promise and after that render the page.

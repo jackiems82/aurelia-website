@@ -2,12 +2,23 @@
     "navigation": {
         "projects": "Projects",
         "about" : "About",
-        "impressum": "Impressum",
-        "disclaimer": "Disclaimer"
+        "impressum": "Imprint",
+        "disclaimer": "Disclaimer",
+        "data-protection": "Data protection"
     },
     "projects": {
+        "header":"<h2>Projects</h2>",
         "structure": "<u>Structure</u>",    
         "size": "Size: ",
         "concave": "Concave: "   
+    },
+    "about": {
+        "content": ""
+    },
+    "impressum": {
+        "content": ""
+    },
+    "data-protection": {
+        "content": ""
     }
 }
