@@ -1,11 +1,11 @@
 <template>
   
     <div class="container">
-        <div class="row col-sm-12" t="[html]projects.header"></div>
+        <div class="row col-sm-12 visible-xs" t="[html]projects.header"></div>
         <!-- Slider main container -->
         <div repeat.for="detail of boardDetails" class="row projects">
         
-            <div class="col-sm-5">
+            <div class="col-sm-5 col-sm">
                 <div class="swiper-container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
@@ -29,7 +29,9 @@
 
             <div class="col-sm-6">
                 <h3 innerhtml.bind="detail.description.header"></h3>
-                <p innerhtml.bind="detail.description.text"></p>
+                <p innerhtml.bind="detail.description.text"></p>                
+            </div>
+            <div class="col-sm-6">
                 </br>
                 <span t="[html]projects.structure"></span>
 

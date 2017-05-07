@@ -8,7 +8,14 @@ body {
   margin-top: 70px;
   background-color: #f3f3f3;
 }
-
+/* wrap long link text */
+.long-link{
+    white-space: pre-wrap; /* css-3 */    
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */    
+    white-space: -o-pre-wrap; /* Opera 7 */    
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
 
 /****FOOTER****/
 
@@ -104,7 +111,6 @@ body {
     text-decoration: none;
 }
 
-
 /*** Home page image ***/
  .home-image{
     overflow: visible;
@@ -179,6 +185,13 @@ body {
 }
 
 
+/* ABout page */
+
+.about-content {
+    margin-bottom: 20px;
+}
+
+
 
 /*****MEDIA QUERIES********/
 
@@ -213,6 +226,10 @@ body {
         margin-top: 30px;
         width: 250px;
         height: 250px;
+    }
+    /* content general */
+    .content {
+        margin-top: 45px;
     }
 }
 /* For width 992px and larger: */
