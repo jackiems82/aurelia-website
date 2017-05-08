@@ -5,12 +5,12 @@
   <div id="wrap">  
 
     <require from="./resources/elements/navigation.html"></require>  
-    <navigation router.bind="router" test.bind="test"></navigation>   
+    <navigation id="header" router.bind="router"></navigation>   
 
     <router-view></router-view>
 
     <require from="./resources/elements/footer.html"></require>
-    <footer></footer> <!--message="Footer content"-->
+    <footer id="footer"></footer> <!--message="Footer content"-->
     
   </div>
 

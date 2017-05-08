@@ -1,11 +1,14 @@
-/* Sticky footer styles
--------------------------------------------------- */
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
 html {
   position: relative;
   min-height: 100%;
 }
 body {
-  margin-top: 70px;
   background-color: #f3f3f3;
 }
 /* wrap long link text */
@@ -17,39 +20,59 @@ body {
     word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
+#wrap {
+   min-height:100%;
+   position:relative;
+}
+
+#body {
+   padding:10px;
+   padding-bottom:100px;   /* Height of the footer */
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:120px;   /* Height of the footer */
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-position: bottom;
+   background-image:url("images/footer3.png");
+
+}
+
+
+
 /****FOOTER****/
 
 /*This wrapping container holds the footer image */
-#wrap{
+/*#wrap{
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: bottom;
-  background-image:url("images/footer3.png");
-}
+
+}*/
 /*Used to provide some space for the footer image*/
-.footer-content{
+/*.footer-content{
     position:relative;
     height: 100px;
     width: 100%;
-}
+}*/
 
-/*Bootom part of footer with links*/
-.footer-content ul {
+/*Bottom part of footer with links*/
+#footer ul {
     position: absolute;
     padding-left: 15px;
     padding-bottom: 20px;
     margin-bottom:0;
     bottom:0;
 }
-.footer-content li {
+#footer li {
     padding: 0;
 }
-.footer-content,
-.footer-content a {
+#footer,
+#footer a {
     color: #f3f3f3;
 }
-.footer-content a {
+#footer a {
     padding: 15px 5px;
 }
 
@@ -66,10 +89,6 @@ body {
 
 
 /****NAVIGATON*******/
-.main-navigation {
-  /* reduce margin by body bottom margin */
-  margin-top: -70px;
-}
 .navbar-brand {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -114,9 +133,9 @@ body {
 /*** Home page image ***/
  .home-image{
     overflow: visible;
-    margin-top: -20px;
     height: 200px;
     width: 100%;
+    margin-top:50px;
     background:url("images/home_768.jpg") no-repeat;
     background-size: cover;
     border-bottom: 1px solid #515151;
@@ -197,6 +216,12 @@ body {
 
 /* For width 480px and larger: */
 @media only screen and (min-width: 480px) {
+    #body{
+        padding-bottom:180px;
+    }
+    #footer{
+        height: 200px;
+    }
     .home-image {
         height: 300px;
         background:url("images/home_992.jpg") no-repeat;
@@ -206,21 +231,23 @@ body {
         width: 320px;
         height: 320px;
     }
-    .footer-content{
+    /*.footer-content{
         height: 150px;
         width: 100%;
-    }
+    }*/
 }
 /* For width 768px and larger: */
 @media only screen and (min-width: 768px) {
+    #body{
+        padding-bottom:200px;
+    }
+    #footer{
+        height: 250px;
+    }
     .home-image {
         height: 400px;
-        margin-top: -65px;
+        margin-top:-85px;
         background-size: cover;
-    }
-    .footer-content{
-        height: 200px;
-        width: 100%;
     }
     .swiper-container {
         margin-top: 30px;
@@ -234,11 +261,17 @@ body {
 }
 /* For width 992px and larger: */
 @media only screen and (min-width: 992px) {
+    #body{
+        padding-bottom:150px;
+    }
+    #footer{
+        height: 300px;
+    }
     .home-image {
         height: 450px;
-        margin-top: -85px;
         background:url("images/home_1200.jpg") no-repeat;
         background-size: cover;
+        z-index: -50;
     }
 
     /*Push logo and navigation down on bigger screens*/
@@ -256,6 +289,12 @@ body {
 }
 /* For width 1200px and larger: */
 @media only screen and (min-width: 1200px) {
+    #body{
+        padding-bottom:200px;
+    }
+    #footer{
+        height: 500px;
+    }
     .home-image {
         height: 500px;
         background:url("images/home_1920.jpg") no-repeat;
@@ -264,6 +303,12 @@ body {
 }
 /* For width 1900px and larger: */
 @media only screen and (min-width: 1900px) {
+    #body{
+        padding-bottom:350px;
+    }
+    #footer{
+        height: 650px;
+    }
     .home-image {
         height: 700px;
         background:url("images/home.jpg") no-repeat;
