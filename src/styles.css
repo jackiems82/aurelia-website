@@ -38,7 +38,8 @@ body {
    background-repeat: no-repeat;
    background-size: 100%;
    background-position: bottom;
-   background-image:url("images/footer3.png");
+   background-image:url("images/footer3.png");   
+   z-index: -100;  
 
 }
 
