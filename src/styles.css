@@ -30,6 +30,11 @@ body {
    padding-bottom:100px;   /* Height of the footer */
    margin-top:30px;
 }
+/* This is needed to move the links in front of the footer an make them clickable. */
+#body a {
+    position: relative;
+    z-index: 1;
+}
 #footer {
    position:absolute;
    bottom:0;
@@ -38,28 +43,13 @@ body {
    background-repeat: no-repeat;
    background-size: 100%;
    background-position: bottom;
-   background-image:url("images/footer3.png");   
-   z-index: -100;  
-
+   background-image:url("images/footer3.png");
 }
 
 
 
 /****FOOTER****/
 
-/*This wrapping container holds the footer image */
-/*#wrap{
-  width: 100%;
-
-}*/
-/*Used to provide some space for the footer image*/
-/*.footer-content{
-    position:relative;
-    height: 100px;
-    width: 100%;
-}*/
-
-/*Bottom part of footer with links*/
 #footer ul {
     position: absolute;
     padding-left: 15px;
@@ -79,7 +69,6 @@ body {
 }
 
 
-
 /*** Flexbox ***/
 /*.flex-container {
   display: -webkit-flex; /* Safari *
@@ -89,12 +78,10 @@ body {
 }*/
 
 
-
 /****NAVIGATON*******/
 .navbar-brand {
   padding-top: 10px;
   padding-bottom: 10px;
-  z-index: 1;
 }
 .navbar-brand img {
     height: 30px;
@@ -172,7 +159,6 @@ body {
     height: 700px;
     width: auto;
     overflow: visible;
-    z-index: 100;
 }
 .swiper-slide {
     text-align: center;
@@ -273,7 +259,6 @@ body {
         height: 450px;
         background:url("images/home_1200.jpg") no-repeat;
         background-size: cover;
-        z-index: -50;
     }
 
     /*Push logo and navigation down on bigger screens*/
