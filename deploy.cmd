@@ -107,7 +107,8 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
 
 :: 3. Build Aurelia application (%AURELIA_ENVIRONMENT%)
 IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
-  call :ExecuteCmd !NPM_CMD! run build-aurelia -- --env %AURELIA_ENVIRONMENT%
+  REM call :ExecuteCmd !NPM_CMD! run build-aurelia -- --env %AURELIA_ENVIRONMENT%
+  call :ExecuteCmd au build --env prod
   IF !ERRORLEVEL! NEQ 0 goto error
 )
 
