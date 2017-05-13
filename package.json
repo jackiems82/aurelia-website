@@ -50,5 +50,8 @@
     "@types/node": "^6.0.45",
     "gulp-htmlmin": "^3.0.0",
     "html-minifier": "^3.2.3"
-  }
+  },
+  "scripts": {
+    "build-aurelia": "au build"
+   }
 }
