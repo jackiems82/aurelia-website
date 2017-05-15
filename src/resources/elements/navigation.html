@@ -5,13 +5,17 @@
   <nav class="nav hidden-xs main-navigation logo" role="navigation">
       <div class="container">
         <div class="row">
-              <a class="col-md-1 navbar-brand" route-href="route: home">
+              <a class="col-md-1 navbar-brand" route-href="route: home"
+                  data-analytics-category="menu" data-analytics-action="navigate" 
+                  data-analytics-label="Home">
                 <img alt="Brand" src="images/logo.svg">
               </a>
               <ul class="col-sm-offset-1 col-md-offset-0 col-md-10 list-inline nav-pills-lg">
                 <li repeat.for="row of router.navigation" show.bind="row.settings.isMainNav" 
                   class="${row.isActive ? 'active' : ''}">
-                  <a href.bind="row.href" t.bind="row.settings.t">${row.title}</a>
+                  <a href.bind="row.href" t.bind="row.settings.t"
+                    data-analytics-category="menu" data-analytics-action="navigate" 
+                    data-analytics-label="${row.title}">${row.title}</a>
                 </li>
               </ul>
           </div>

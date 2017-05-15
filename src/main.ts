@@ -34,6 +34,23 @@ export function configure(aurelia: Aurelia) {
         debug : true
       });
     })
+    .plugin('aurelia-google-analytics', config => {
+			config.init('UA-99136946-1');
+			config.attach({
+				logging: {
+					enabled: true // Set to `true` to have some log messages appear in the browser console.
+				},
+				pageTracking: {
+					enabled: true // Set to `false` to disable in non-production environments.
+				},
+				clickTracking: {
+					enabled: true // Set to `false` to disable in non-production environments.
+				},
+				exceptionTracking: {
+					enabled: true // Set to `false` to disable in non-production environments.
+				}
+		  })
+    })
 
     .feature('resources');
 

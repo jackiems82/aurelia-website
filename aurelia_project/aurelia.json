@@ -177,6 +177,13 @@
             "name": "intl",
             "path": "../node_modules/intl/dist",
             "main": "Intl.min"
+          },
+          "deepmerge",
+          {
+            "name": "aurelia-google-analytics",
+            "main": "index",
+            "path": "../node_modules/aurelia-google-analytics/dist/amd",
+            "resources": []
           }
         ]
       }
