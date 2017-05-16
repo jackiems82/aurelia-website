@@ -137,8 +137,11 @@
           "jquery",
           {
             "name": "bootstrap",
-            "path": "../node_modules/bootstrap/dist",
-            "main": "js/bootstrap.min",
+            "path": "../node_modules/bootstrap",
+            "main": "dist/js/bootstrap.min.js",
+            "resources": [
+              "dist/css/bootstrap.min.css"
+            ],
             "deps": [
               "jquery"
             ],
@@ -184,6 +187,15 @@
             "main": "index",
             "path": "../node_modules/aurelia-google-analytics/dist/amd",
             "resources": []
+          },
+          {
+            "name": "photoswipe",
+            "main": "dist/photoswipe.js",
+            "path": "../node_modules/photoswipe",
+            "resources": [
+              "dist/default-skin/default-skin.css",
+              "dist/photoswipe.css"
+            ]
           }
         ]
       }
