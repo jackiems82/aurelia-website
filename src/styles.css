@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Datalegreya;
+    src: url("assets/fonts/Datalegreya-Thin.otf") format("opentype");
+    font-weight: bolder;
+}
+
 html,
 body {
    margin:0;
@@ -11,6 +17,9 @@ html {
 body {
   background-color: #f3f3f3;
 }
+
+
+
 /* wrap long link text */
 .long-link{
     white-space: pre-wrap; /* css-3 */    
@@ -130,8 +139,10 @@ body {
     border-bottom: 1px solid #515151;
 }
 .home-heading {
-    font-size: 4em;
-    margin-top: 50px;
+    font-family: Datalegreya;
+    font-size: 5em;
+    margin-top: -10px;
+    margin-left: -8px;
 }
 /*.home-image img {
     height: auto;
@@ -231,6 +242,9 @@ body {
     }
     #footer{
         height: 250px;
+    }
+    .home-heading {     
+        font-size: 6em;
     }
     .home-image {
         height: 400px;

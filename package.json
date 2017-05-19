@@ -1,5 +1,5 @@
 {
-  "name": "3boards",
+  "name": "DeinBRETT",
   "description": "An Aurelia client application.",
   "version": "0.1.0",
   "engines": {
@@ -9,6 +9,7 @@
   "dependencies": {
     "@types/i18next": "^2.3.38",
     "@types/i18next-xhr-backend": "^1.2.2",
+    "@types/photoswipe": "^4.0.27",
     "aurelia-animator-css": "^1.0.1",
     "aurelia-bootstrapper": "^2.1.0",
     "aurelia-cli": "^0.26.1",

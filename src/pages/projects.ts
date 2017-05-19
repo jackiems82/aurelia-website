@@ -1,11 +1,8 @@
 import { WebApi, BoardDetails } from '../web-api';
 import { autoinject} from 'aurelia-framework';
-import {RouterConfiguration, Router} from 'aurelia-router';
-import * as Swiper from 'swiper'
 
 @autoinject
 export class Projects{
-    router: Router;
     boardDetails: BoardDetails[];
 
     constructor(private api: WebApi){} 

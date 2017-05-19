@@ -155,10 +155,10 @@
           },
           {
             "name": "swiper",
-            "main": "dist/js/swiper.min.js",
-            "path": "../node_modules/swiper",
+            "main": "js/swiper.min.js",
+            "path": "../node_modules/swiper/dist",
             "resources": [
-              "dist/css/swiper.min.css"
+              "css/swiper.min.css"
             ]
           },
           {
@@ -188,15 +188,7 @@
             "path": "../node_modules/aurelia-google-analytics/dist/amd",
             "resources": []
           },
-          {
-            "name": "photoswipe",
-            "main": "dist/photoswipe.js",
-            "path": "../node_modules/photoswipe",
-            "resources": [
-              "dist/default-skin/default-skin.css",
-              "dist/photoswipe.css"
-            ]
-          }
+          "photoswipe"
         ]
       }
     ]
