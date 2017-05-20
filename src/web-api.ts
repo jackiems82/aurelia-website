@@ -33,13 +33,18 @@ export class ImageDetails{
 }
 
 export class Description{
-    header: string;
-    text: string;
-    structureText: string;
+    en: Language;
+    de: Language;
     size: string;
     wheelBase: string;
     concave: string;
     kicks: string;
+}
+
+export class Language{
+    header: string;
+    text: string;
+    structureText: string;
 }
 
 export class BoardDetails{
@@ -51,9 +56,17 @@ export class BoardDetails{
 let data:BoardDetails[] =
     [{
         description: { 
-            header: "3 Boards" , 
-            text:"3 Boards, ähnlich im Stil, unterschiedlich im Design, mit einzigartigen Statements. Dieses Mal durfte ich für Freunde nach ihren Wünschen und Vorstellungen Longboard Decks bauen. Dabei waren besonders Städte und Hobbies für das Design ausschlaggebend.",
-            structureText: "Hergestellt im Vakuumverfahren, Birkenperrholz mit Pappelkern und Glasfasern. Ahornfunier bildet wieder den Abschluss. Eine Besonderheit ist das Cleargrip bei einem Deck wodurch die Oberseite besonders zur Geltung kommt.",
+            de:{
+                header: "3 Boards" , 
+                text:"3 Boards, ähnlich im Stil, unterschiedlich im Design, mit einzigartigen Statements. Dieses Mal durfte ich für Freunde nach ihren Wünschen und Vorstellungen Longboard Decks bauen. Dabei waren besonders Städte und Hobbies für das Design ausschlaggebend.",
+                structureText: "Hergestellt im Vakuumverfahren, Birkenperrholz mit Pappelkern und Glasfasern. Ahornfunier bildet wieder den Abschluss. Eine Besonderheit ist das Cleargrip bei einem Deck wodurch die Oberseite besonders zur Geltung kommt.",
+            
+            },
+            en:{
+                header: "3 Boards" , 
+                text:"EN",
+                structureText: "EN",
+            },
             size: "",
             wheelBase:"",
             concave:"",
@@ -73,9 +86,16 @@ let data:BoardDetails[] =
         ]
     },{
         description: { 
-            header: "Mini Cruiser &quot;Mone&quot;" , 
-            text:"Dies ist ein modfiziertes Design meines ersten Mini Cruisers. Der neue Kicktail bietet bessere Kontrolle für noch engere Turns.",
-            structureText: "Hergestellt mit einer einfachen Balkenpresse. Der Aufbau besteht aus Birkensperrholz in Verbindung mit einem Pappelkern, verstärkt mit Glasfasern. Ahornfunier auf der Unterseite verleiht ein schönes Finish. Der Print zeigt Hibiscusblüten und einen Pfau, der Gripjob auf der Oberseite stellt einen Gecko dar.",
+            de: {
+                header: "Mini Cruiser &quot;Mone&quot;" , 
+                text:"Dies ist ein modfiziertes Design meines ersten Mini Cruisers. Der neue Kicktail bietet bessere Kontrolle für noch engere Turns.",
+                structureText: "Hergestellt mit einer einfachen Balkenpresse. Der Aufbau besteht aus Birkensperrholz in Verbindung mit einem Pappelkern, verstärkt mit Glasfasern. Ahornfunier auf der Unterseite verleiht ein schönes Finish. Der Print zeigt Hibiscusblüten und einen Pfau, der Gripjob auf der Oberseite stellt einen Gecko dar.",
+            },
+            en:{
+                header: "Mini Cruiser &quot;Mone&quot;" , 
+                text:"EN",
+                structureText: "EN",
+            },
             size: "8.2'' x 29.5''",
             wheelBase:"",
             concave:"",
@@ -91,9 +111,16 @@ let data:BoardDetails[] =
         ]
     }, {
         description: { 
-            header: "Freerider &quot;Haedge&quot;" , 
-            text: "Mein erster gedroppter Freerider. Ein stabiles und beständiges Board zu produzieren, war ausschlaggebend für das Design. Dies wird nicht nur durch den Shape sondern auch durch den Print auf der Unterseite aufgegriffen, welcher den Hafenkran auf der Haedge Halbinsel zeigt. Auf der Flagge ist Rostocks Wappentier, der Greif, abbildet. Das Symbol auf der Oberseite stellt eine der Verstrebungen des Krans dar, die ihm seine Stabilität verleihen. Aufgund seiner relativ kompaktem Maße ist das Board ein idealer Reisebegleiter.",
-            structureText: "Dies ist das erste Deck welches im Vakkuumverfahren entstanden ist. Der Aufbau besteht aus Birkensperrholz in Verbindung mit einem Pappelkern, verstärkt mit Glasfasern. Ahornfunier auf der Unterseite verleiht ein schönes Finish. Die mittelstarke Konkave bietet gute Kontrolle bei Turns.",
+            de: {
+                header: "Freerider &quot;Haedge&quot;" , 
+                text: "Mein erster gedroppter Freerider. Ein stabiles und beständiges Board zu produzieren, war ausschlaggebend für das Design. Dies wird nicht nur durch den Shape sondern auch durch den Print auf der Unterseite aufgegriffen, welcher den Hafenkran auf der Haedge Halbinsel zeigt. Auf der Flagge ist Rostocks Wappentier, der Greif, abbildet. Das Symbol auf der Oberseite stellt eine der Verstrebungen des Krans dar, die ihm seine Stabilität verleihen. Aufgund seiner relativ kompaktem Maße ist das Board ein idealer Reisebegleiter.",
+                structureText: "Dies ist das erste Deck welches im Vakkuumverfahren entstanden ist. Der Aufbau besteht aus Birkensperrholz in Verbindung mit einem Pappelkern, verstärkt mit Glasfasern. Ahornfunier auf der Unterseite verleiht ein schönes Finish. Die mittelstarke Konkave bietet gute Kontrolle bei Turns.",
+            },
+            en:{
+                header: "Mini Cruiser &quot;Mone&quot;" , 
+                text:"EN",
+                structureText: "EN",
+            },
             size: "9'' x 37''",
             wheelBase:"?",
             concave:"?",
@@ -107,9 +134,16 @@ let data:BoardDetails[] =
         ]
     },  {
         description: { 
-            header: "Mini Cruiser &quot;Rostock&quot;" , 
-            text:"Mein erstes Deck!! Mein erstes Board sollte etwas besonderes sein, mit dem ich persönlich etwas verbinde. Daher entschied ich mich bei der Wahl des Themas für meine Heimatstadt.",
-            structureText: "Hergestellt mit einer einfachen Balkenpresse. Der Aufbau besteht aus Birke und einer Glasfaserverstärkung. Der Print zeigt den Rostocker Stadhafen aus der Vogelperspektive. Auf der Oberseite befindet sich das Stadtwappen.",
+            de: {
+                header: "Mini Cruiser &quot;Rostock&quot;" , 
+                text:"Mein erstes Deck!! Mein erstes Board sollte etwas besonderes sein, mit dem ich persönlich etwas verbinde. Daher entschied ich mich bei der Wahl des Themas für meine Heimatstadt.",
+                structureText: "Hergestellt mit einer einfachen Balkenpresse. Der Aufbau besteht aus Birke und einer Glasfaserverstärkung. Der Print zeigt den Rostocker Stadhafen aus der Vogelperspektive. Auf der Oberseite befindet sich das Stadtwappen.",
+            },
+            en:{
+                header: "Mini Cruiser &quot;Mone&quot;" , 
+                text:"EN",
+                structureText: "EN",
+            },
             size: "8.15'' x 27.75''",
             wheelBase:"",
             concave:"",

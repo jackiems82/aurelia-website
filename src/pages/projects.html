@@ -1,5 +1,5 @@
 <template>
-  
+
     <div class="container" id="body">
         <div class="row col-sm-12 visible-xs" t="[html]projects.header"></div>
         <!-- Slider main container -->
@@ -27,15 +27,20 @@
                 </div>
             </div>
 
-            <div class="col-sm-6">
-                <h3 innerhtml.bind="detail.description.header"></h3>
-                <p innerhtml.bind="detail.description.text"></p>                
+            <div if.bind="!showInEnglish" class="col-sm-6">
+                <h3 innerhtml.bind="detail.description.de.header"></h3>
+                <p innerhtml.bind="detail.description.de.text"></p>                
+            </div>
+            <div if.bind="showInEnglish" class="col-sm-6">
+                <h3 innerhtml.bind="detail.description.en.header"></h3>
+                <p innerhtml.bind="detail.description.en.text"></p>                
             </div>
             <div class="col-sm-6">
                 </br>
                 <span t="[html]projects.structure"></span>
 
-                <p innerhtml.bind="detail.description.structureText"></p>
+                <p if.bind="!showInEnglish" innerhtml.bind="detail.description.de.structureText"></p>
+                <p if.bind="showInEnglish" innerhtml.bind="detail.description.en.structureText"></p>
                 <ul>
                     <li show.bind="detail.description.size" t="[prepend]projects.size">${detail.description.size}</li>
                     <li show.bind="detail.description.wheelBase">Wheelbase: ${detail.description.wheelBase}</li>
