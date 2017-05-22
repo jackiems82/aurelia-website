@@ -64,8 +64,8 @@ let data:BoardDetails[] =
             },
             en:{
                 header: "3 Boards" , 
-                text:"EN",
-                structureText: "EN",
+                text:"3 Boards, similar in style, different in design, with unique statements. This time, I was allowed to build longboard decks for friends, according to their wishes and expectations. Particularly cities and hobbies were decisive for the prints.",
+                structureText: "Made in a vacuum process, birch plywood with poplar core and glass fibers. A special feature is the clear grip on one deck, which showcases particularly the upper side.",
             },
             size: "",
             wheelBase:"",
@@ -93,8 +93,8 @@ let data:BoardDetails[] =
             },
             en:{
                 header: "Mini Cruiser &quot;Mone&quot;" , 
-                text:"EN",
-                structureText: "EN",
+                text:"This is a modified design of my first Mini Cruiser. The new Kicktail provides better control for even tighter turns.",
+                structureText: "Made with a simple bar press. The structure consists of birch plywood combined with a poplar core, reinforced with glass fibers. Maple veneer on the bottom gives a nice finish. The print shows hibiscus blossoms and a peacock, the gripjob on the top represents a gecko.",
             },
             size: "8.2'' x 29.5''",
             wheelBase:"",
@@ -113,17 +113,17 @@ let data:BoardDetails[] =
         description: { 
             de: {
                 header: "Freerider &quot;Haedge&quot;" , 
-                text: "Mein erster gedroppter Freerider. Ein stabiles und beständiges Board zu produzieren, war ausschlaggebend für das Design. Dies wird nicht nur durch den Shape sondern auch durch den Print auf der Unterseite aufgegriffen, welcher den Hafenkran auf der Haedge Halbinsel zeigt. Auf der Flagge ist Rostocks Wappentier, der Greif, abbildet. Das Symbol auf der Oberseite stellt eine der Verstrebungen des Krans dar, die ihm seine Stabilität verleihen. Aufgund seiner relativ kompaktem Maße ist das Board ein idealer Reisebegleiter.",
-                structureText: "Dies ist das erste Deck welches im Vakkuumverfahren entstanden ist. Der Aufbau besteht aus Birkensperrholz in Verbindung mit einem Pappelkern, verstärkt mit Glasfasern. Ahornfunier auf der Unterseite verleiht ein schönes Finish. Die mittelstarke Konkave bietet gute Kontrolle bei Turns.",
+                text: "Ein stabiles und beständiges Board zu produzieren, war ausschlaggebend für das Design. Dies wird nicht nur durch den Shape sondern auch durch den Print auf der Unterseite aufgegriffen. Das Motiv zeigt den Hafenkran der Haedge Halbinsel und einer Flagge mit Rostocks Wappentier, dem Greif. Das Symbol auf der Oberseite stellt eine der Verstrebungen des Krans dar, die ihm seine Stabilität verleihen. Aufgrund seiner relativ kompakten Maße ist das Board ein idealer Reisebegleiter.",
+                structureText: "Zum ersten Mal im Vakkuumverfahren entstanden besteht der Aufbau aus Birkensperrholz in Verbindung mit einem Pappelkern, verstärkt mit Glasfasern. Ahornfunier auf der Unterseite verleiht ein schönes Finish. Die mittelstarke Konkave bietet gute Kontrolle beim Fahren.",
             },
             en:{
-                header: "Mini Cruiser &quot;Mone&quot;" , 
-                text:"EN",
-                structureText: "EN",
+                header: "Freerider &quot;Haedge&quot;" , 
+                text:"Producing a stable and durable board was crucial for the design. This is not only taken up by the shape but also by the print on the bottom side. The motif shows the harbor crane of the Haedge peninsula and a flag with Rostock's heraldic animal, the griffin. The symbol on top represents one of the braces of the crane, which confer stability. Due to its relatively compact dimensions, the board is an ideal travel companion.",
+                structureText: "For the first time produced in a vacuum process. The structure consists of birch plywood in combination with a poplar core, reinforced with glass fibers. Maple veneer on the bottom provides a nice finish. The moderately deep concave provides good control while riding.",
             },
             size: "9'' x 37''",
-            wheelBase:"?",
-            concave:"?",
+            wheelBase:"63 cm",
+            concave:"1 cm",
             kicks: ""
         },
         images: [
@@ -137,12 +137,12 @@ let data:BoardDetails[] =
             de: {
                 header: "Mini Cruiser &quot;Rostock&quot;" , 
                 text:"Mein erstes Deck!! Mein erstes Board sollte etwas besonderes sein, mit dem ich persönlich etwas verbinde. Daher entschied ich mich bei der Wahl des Themas für meine Heimatstadt.",
-                structureText: "Hergestellt mit einer einfachen Balkenpresse. Der Aufbau besteht aus Birke und einer Glasfaserverstärkung. Der Print zeigt den Rostocker Stadhafen aus der Vogelperspektive. Auf der Oberseite befindet sich das Stadtwappen.",
+                structureText: "Hergestellt mit einer einfachen Balkenpresse. Der Aufbau besteht aus Birke und Glasfaserverstärkung. Den Griff fand ich sinnvoll zum Tragen und um das Board wenn nötig anzuschließen. Der Print zeigt den Rostocker Stadhafen aus der Vogelperspektive. Auf der Oberseite befindet sich das Stadtwappen.",
             },
             en:{
-                header: "Mini Cruiser &quot;Mone&quot;" , 
-                text:"EN",
-                structureText: "EN",
+                header: "Mini Cruiser &quot;Rostock&quot;" , 
+                text:"My first deck!! My first board had to be something special I am personally connected with. Therefore, I chose prominent elements from my hometown for its theme.",
+                structureText: "Made with a simple bar press. The structure is made of birch and a glass fiber reinforcement. I found the handle to be useful for carrying and to lock the board if necessary. The print shows Rostock's water front from a bird's eye view. On the top is the town's coat of arms",
             },
             size: "8.15'' x 27.75''",
             wheelBase:"",
@@ -155,43 +155,5 @@ let data:BoardDetails[] =
             {imageUrl:"", thumb:"images/1_3_400.jpg"},      
             {imageUrl:"", thumb:"images/1_4_400.jpg"},      
         ]
-    }
-    
+    }    
 ];
-
-
-// {
-//     description: { 
-//         header: "Freerider &quot;Haedge&quot;" , 
-//         text: "My first dropped freerider. Producing a solid and stable deck was the target during the entire design process. That also constitutes the bottom print which represents the harbour crane on &quot;Haedge Halbinsel&quot; with a flag of Rostock&#39;s heraldic animal, the griffin. The symbol on top reflects one of the braces that provide the crane its solidity. Due to its medium size, it is a great travel companion.",
-//         structureText: "Combination of Baltic birch with a poplar core enforced with glas fibre. One sheet of maple veneer at the bottom produces a nice finish. The moderately deep concave provides good control in turns.",
-//         size: "9'' x 37''",
-//         wheelBase:"?",
-//         concave:"?",
-//         kicks: ""
-//     },
-//     images: [
-//         {imageUrl:"", thumb:"images/2_3_320x480.jpg"},
-//         {imageUrl:"", thumb:"images/2_2_320x480.jpg"},
-//         {imageUrl:"", thumb:"images/2_1_717x480.jpg"},
-//         {imageUrl:"", thumb:"images/2_5_720x480.jpg"}
-//     ]
-// }, {
-//     description: { 
-//         header: "Mini Cruiser &quot;Mone&quot;" , 
-//         text:"This is a modified design of my first mini cruiser. This one has a kick tail to increase ease of turns.",
-//         structureText: "Combination of Baltic birch with a poplar core enforced with glas fibre. One sheet of maple veneer at the bottom produces a nice finish. The bottom print represents hibiscus blossoms and a peacock. On the top a grip job with a gecko.",
-//         size: "8.2'' x 29.5''",
-//         wheelBase:"",
-//         concave:"",
-//         kicks: ""
-//     },
-//     images: [
-//         {imageUrl:"", thumb:"images/3_1_720x480.jpg"},
-//         {imageUrl:"", thumb:"images/3_2_320x480.jpg"},
-//         {imageUrl:"", thumb:"images/3_3_320x480.jpg"},           
-//         {imageUrl:"", thumb:"images/3_4_320x480.jpg"},          
-//         {imageUrl:"", thumb:"images/3_5_720x480.jpg"},        
-//         {imageUrl:"", thumb:"images/3_6_720x480.jpg"},        
-//     ]
-// }
