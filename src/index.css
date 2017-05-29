@@ -6,14 +6,14 @@
     text-align: center;
     margin: auto;
     height: 200px;
-    width: 80px;
+    width: 150px;
     position: absolute;
     overflow: visible;
     top: 0; left: 0; bottom: 0; right: 0;
 }
 
 #spinner {
-    width: 80px;
+    width: 150px;
     animation-delay: 0s;
     animation-play-state: running;
     animation-name: spinner;
