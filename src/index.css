@@ -1,0 +1,39 @@
+.absolute-center {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    text-align: center;
+    margin: auto;
+    height: 200px;
+    width: 80px;
+    position: absolute;
+    overflow: visible;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#spinner {
+    width: 80px;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-name: spinner;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spinner{
+    0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55,0.055,0.675,0.19);
+    }
+    50% {
+        -webkit-transform: rotate(900deg);
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215,0.61,0.355,1);
+    }
+    100% {
+        -webkit-transform: rotate(1800deg);
+        transform: rotate(1800deg);
+    }
+}

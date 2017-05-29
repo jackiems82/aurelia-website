@@ -13,12 +13,12 @@ body {
 html {
   position: relative;
   min-height: 100%;
+  /*always shows the scrollbar so that it prevents jumping of content when no scrollbar would be shown*/
+  overflow-y: scroll;
 }
 body {
   background-color: #f3f3f3;
 }
-
-
 
 /* wrap long link text */
 .long-link{
