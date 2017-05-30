@@ -37,3 +37,9 @@
         transform: rotate(1800deg);
     }
 }
+
+@font-face {
+    font-family: Datalegreya;
+    src: url("../assets/fonts/Datalegreya-Thin.otf") format("opentype");
+    font-weight: bolder;
+}

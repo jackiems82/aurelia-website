@@ -1,9 +1,3 @@
-@font-face {
-    font-family: Datalegreya;
-    src: url("assets/fonts/Datalegreya-Thin.otf") format("opentype");
-    font-weight: bolder;
-}
-
 html,
 body {
    margin:0;

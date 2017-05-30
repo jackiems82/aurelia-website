@@ -10,7 +10,7 @@
       <p>Vielen Dank für dein Interesse ans unseren Inhalten. Leider unterstützt dein Browser kein JavaScript oder es ist deaktiviert. Jedoch kannst du gern über unsere 
         <a href='https://www.facebook.com/threeeboards/' 
           data-analytics-category='link' data-analytics-action='navigate' 
-          data-analytics-label='Index-Facebooklink'>Facebook Seite</a> mit uns in Kontakt treten.
+          data-analytics-label='Index-Facebooklink'>Facebookseite</a> mit uns in Kontakt treten.
       </p>
       <p>Wir freuen uns von dir zu hören.</p>
       <br>
@@ -26,7 +26,11 @@
 
   <body aurelia-app="main">
     <div class="absolute-center">
-      <img id="spinner" src="images/wheel.svg" alt="">
+      <img id="spinner" src="images/wheel.svg" alt="Loading">
+      
+      <div class="font_preload" style="opacity: 0">
+        <span style="font-family: 'Datalegreya', Arial, sans-serif;"></span>
+      </div>
     </div>
     
     <script src="scripts/vendor-bundle.js" data-main="aurelia-bootstrapper"></script>
