@@ -1,44 +1,55 @@
-import PhotoSwipe from "photoswipe"; 
-import PhotoSwipeUI_Default from "photoswipe/dist/photoswipe-ui-default.js"
+import { Items } from '../resources/elements/photoswipe-modal';
+import { ImageModel, Url } from '../resources/ImageModel';
+
 
 export class About {
+    ps: any;
+    model: ImageModel;
     pswpElement;
     items;
     options;  
 
 
-    attached() {
-        this.pswpElement = document.querySelectorAll('.pswp')[0];
-        // build items array
-        this.items = [
-            {
-                src: 'https://placekitten.com/600/400',
-                w: 600,
-                h: 400
-            },
-            {
-                src: 'https://placekitten.com/1200/900',
-                w: 1200,
-                h: 900
-            }
-        ];
-
-        // define options (if needed)
-        this.options = {
-            // optionName: 'option value'
-            // for example:
-            index: 0 // start at first slide
-        };
-
-        // // Initializes and opens PhotoSwipe
-        // var gallery = new PhotoSwipe(this.pswpElement, PhotoSwipeUI_Default, this.items, this.options);
-        // gallery.init();
+    constructor() {
+        this.model = new ImageModel();
+        this.model.smallImages = new Array<Url>(); 
+        this.model.mediumImages = new Array<Url>();
+        this.model.largeImages = new Array<Url>();
     }
 
-    openGallery() {
-        console.log("test");
-        let pswpElement = document.querySelectorAll('.pswp')[0];
-        let gallery = new PhotoSwipe(pswpElement as HTMLElement, PhotoSwipeUI_Default, this.items, this.options);
-        gallery.init();
+    attached() {
+        this.model.smallImages.push({ url: "images/Stadthafen_230.jpg" });
+        this.model.mediumImages.push({ url: "images/Stadthafen_230.jpg"});
+        this.model.largeImages.push({ url: "images/Stadthafen_.jpg" });
+    }
+
+    createImageList() {
+        var items: Array<Items> = [];
+
+        var thumbnails = document.querySelectorAll('img.photoswipe')
+        var pageYScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        for (var n = 0; n < this.model.smallImages.length; n++) {
+            var rect = thumbnails[n].getBoundingClientRect();
+
+            items.push({
+                src: this.model.largeImages[n].url,
+                msrc: this.model.smallImages[n].url,
+                w: 2597,
+                h: 3872,
+                thumbBounds: { x: rect.left, y: rect.top + pageYScroll, w: rect.width }
+            });
+        }
+
+        this.ps.items = items;
+    }
+
+    clickImage(id: any) {
+        console.log("CLick");
+        var index = id.index;
+        if (!this.ps.items) {
+            this.createImageList();
+        }
+        this.ps.test_ps(index);
     }
 }

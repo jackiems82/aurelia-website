@@ -34,7 +34,8 @@ body {
    margin-top:30px;
 }
 /* This is needed to move the links in front of the footer an make them clickable. */
-#body a {
+#body a,
+#body .swiper-lazy {
     position: relative;
     z-index: 1;
 }
@@ -278,8 +279,8 @@ body {
         margin-bottom: 60px;
     }
     .swiper-container {   
-        width: 320px;
-        height: 320px;
+        width: 370px;
+        height: 370px;
     }
 }
 /* For width 1200px and larger: */
@@ -294,6 +295,10 @@ body {
         height: 500px;
         background:url("images/home_1920.jpg") no-repeat;
         background-size: cover;
+    }
+    .swiper-container {   
+        width: 400px;
+        height: 400px;
     }
 }
 /* For width 1900px and larger: */

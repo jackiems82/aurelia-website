@@ -14,7 +14,7 @@
 
 #spinner {
     width: 150px;
-    animation-delay: 0s;
+    animation-delay: 0.1s;
     animation-play-state: running;
     animation-name: spinner;
     animation-duration: 2.5s;

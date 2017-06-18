@@ -188,7 +188,16 @@
             "path": "../node_modules/aurelia-google-analytics/dist/amd",
             "resources": []
           },
-          "photoswipe"
+          {
+            "name": "photoswipe",
+            "main": "photoswipe",
+            "path": "../node_modules/photoswipe/dist/",
+            "resources": [
+              "photoswipe-ui-default.js",
+              "photoswipe.css",
+              "default-skin/default-skin.css"
+            ]
+          }
         ]
       }
     ]

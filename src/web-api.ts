@@ -29,7 +29,9 @@ export class WebApi{
 
 export class ImageDetails{
     imageUrl: string;
-    thumb: string; // not used so far
+    thumb: string;
+    // index used to load the correct image in the photoSwipe gallery. Set in view-model.
+    photoSwipeIndex: number;
 }
 
 export class Description{
@@ -73,16 +75,16 @@ let data:BoardDetails[] =
             kicks: ""
         },
         images: [
-            {imageUrl:"", thumb:"images/4_1_400.jpg"},      
-            {imageUrl:"", thumb:"images/4_2_400.jpg"},      
-            {imageUrl:"", thumb:"images/4_3_400.jpg"},      
-            {imageUrl:"", thumb:"images/4_4_400.jpg"},      
-            {imageUrl:"", thumb:"images/4_5_400.jpg"},      
-            {imageUrl:"", thumb:"images/4_6_400.jpg"},      
-            {imageUrl:"", thumb:"images/4_7_400.jpg"},      
-            {imageUrl:"", thumb:"images/4_8_400.jpg"},      
-            {imageUrl:"", thumb:"images/4_9_400.jpg"},      
-            {imageUrl:"", thumb:"images/4_10_400.jpg"},      
+            {imageUrl:"", thumb:"images/4_1_400.jpg", photoSwipeIndex: undefined },      
+            {imageUrl:"", thumb:"images/4_2_400.jpg", photoSwipeIndex: undefined },      
+            {imageUrl:"", thumb:"images/4_3_400.jpg", photoSwipeIndex: undefined },      
+            {imageUrl:"", thumb:"images/4_4_400.jpg", photoSwipeIndex: undefined },      
+            {imageUrl:"", thumb:"images/4_5_400.jpg", photoSwipeIndex: undefined },      
+            {imageUrl:"", thumb:"images/4_6_400.jpg", photoSwipeIndex: undefined },      
+            {imageUrl:"", thumb:"images/4_7_400.jpg", photoSwipeIndex: undefined },      
+            {imageUrl:"", thumb:"images/4_8_400.jpg", photoSwipeIndex: undefined },      
+            {imageUrl:"", thumb:"images/4_9_400.jpg", photoSwipeIndex: undefined },      
+            {imageUrl:"", thumb:"images/4_10_400.jpg", photoSwipeIndex: undefined },      
         ]
     },{
         description: { 
@@ -102,12 +104,12 @@ let data:BoardDetails[] =
             kicks: ""
         },
         images: [
-            {imageUrl:"", thumb:"images/3_1_400.jpg"},
-            {imageUrl:"", thumb:"images/3_2_400.jpg"},
-            {imageUrl:"", thumb:"images/3_3_400.jpg"},           
-            {imageUrl:"", thumb:"images/3_4_400.jpg"},          
-            {imageUrl:"", thumb:"images/3_5_400.jpg"},        
-            {imageUrl:"", thumb:"images/3_6_400.jpg"},        
+            {imageUrl:"", thumb:"images/3_1_400.jpg", photoSwipeIndex: undefined },
+            {imageUrl:"", thumb:"images/3_2_400.jpg", photoSwipeIndex: undefined },
+            {imageUrl:"", thumb:"images/3_3_400.jpg", photoSwipeIndex: undefined },           
+            {imageUrl:"", thumb:"images/3_4_400.jpg", photoSwipeIndex: undefined },          
+            {imageUrl:"", thumb:"images/3_5_400.jpg", photoSwipeIndex: undefined },        
+            {imageUrl:"", thumb:"images/3_6_400.jpg", photoSwipeIndex: undefined },        
         ]
     }, {
         description: { 
@@ -127,10 +129,11 @@ let data:BoardDetails[] =
             kicks: ""
         },
         images: [
-            {imageUrl:"", thumb:"images/2_3_400.jpg"},
-            {imageUrl:"", thumb:"images/2_2_400.jpg"},
-            {imageUrl:"", thumb:"images/2_1_400.jpg"},
-            {imageUrl:"", thumb:"images/2_5_400.jpg"}
+            {imageUrl:"", thumb:"images/2_0_400.jpg", photoSwipeIndex: undefined },
+            {imageUrl:"", thumb:"images/2_3_400.jpg", photoSwipeIndex: undefined },
+            {imageUrl:"", thumb:"images/2_2_400.jpg", photoSwipeIndex: undefined },
+            {imageUrl:"", thumb:"images/2_1_400.jpg", photoSwipeIndex: undefined },
+            {imageUrl:"", thumb:"images/2_5_400.jpg", photoSwipeIndex: undefined }
         ]
     },  {
         description: { 
@@ -150,10 +153,10 @@ let data:BoardDetails[] =
             kicks: ""
         },
         images: [
-            {imageUrl:"", thumb:"images/1_1_400.jpg"},      
-            {imageUrl:"", thumb:"images/1_2_400.jpg"},      
-            {imageUrl:"", thumb:"images/1_3_400.jpg"},      
-            {imageUrl:"", thumb:"images/1_4_400.jpg"},      
+            {imageUrl:"images/1_1.jpg", thumb:"images/1_1_400.jpg", photoSwipeIndex: undefined },      
+            {imageUrl:"images/1_2.jpg", thumb:"images/1_2_400.jpg", photoSwipeIndex: undefined },      
+            {imageUrl:"images/1_3.jpg", thumb:"images/1_3_400.jpg", photoSwipeIndex: undefined },      
+            {imageUrl:"images/1_4.jpg", thumb:"images/1_4_400.jpg", photoSwipeIndex: undefined },      
         ]
     }    
 ];
