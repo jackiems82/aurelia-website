@@ -64,7 +64,7 @@ export class PhotoswipeModal {
             tapToToggleControls: true,
             clickToCloseNonZoomable: true,
             closeElClasses: ['item', 'caption', 'zoom-wrap', 'ui', 'top-bar'],
-            indexIndicatorSep: ' van ',
+            indexIndicatorSep: ' / ',
 
             //// uncomment to display inline in a div
             //modal: false,
