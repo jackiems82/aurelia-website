@@ -20,7 +20,7 @@ export class About {
     attached() {
         this.model.smallImages.push({ url: "images/Stadthafen_230.jpg" });
         this.model.mediumImages.push({ url: "images/Stadthafen_230.jpg"});
-        this.model.largeImages.push({ url: "images/Stadthafen_.jpg" });
+        this.model.largeImages.push({ url: "images/stadthafen_size_805x1200.jpg" });
     }
 
     createImageList() {

@@ -28,7 +28,8 @@ export class WebApi{
 }
 
 export class ImageDetails{
-    imageUrl: string;
+    largeImgUrl: string;
+    smallImgUrl: string;
     thumb: string;
     // index used to load the correct image in the photoSwipe gallery. Set in view-model.
     photoSwipeIndex: number;
@@ -75,16 +76,16 @@ let data:BoardDetails[] =
             kicks: ""
         },
         images: [
-            {imageUrl:"", thumb:"images/4_1_400.jpg", photoSwipeIndex: undefined },      
-            {imageUrl:"", thumb:"images/4_2_400.jpg", photoSwipeIndex: undefined },      
-            {imageUrl:"", thumb:"images/4_3_400.jpg", photoSwipeIndex: undefined },      
-            {imageUrl:"", thumb:"images/4_4_400.jpg", photoSwipeIndex: undefined },      
-            {imageUrl:"", thumb:"images/4_5_400.jpg", photoSwipeIndex: undefined },      
-            {imageUrl:"", thumb:"images/4_6_400.jpg", photoSwipeIndex: undefined },      
-            {imageUrl:"", thumb:"images/4_7_400.jpg", photoSwipeIndex: undefined },      
-            {imageUrl:"", thumb:"images/4_8_400.jpg", photoSwipeIndex: undefined },      
-            {imageUrl:"", thumb:"images/4_9_400.jpg", photoSwipeIndex: undefined },      
-            {imageUrl:"", thumb:"images/4_10_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_1_size_1200x675.jpg", smallImgUrl: "images/4_1_size_711x400.jpg", thumb:"images/4_1_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_2_size_1422x400.jpg", smallImgUrl: "images/4_2_size_1422x400.jpg", thumb:"images/4_2_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_3_size_1200x675.jpg", smallImgUrl: "images/4_3_size_711x400.jpg", thumb:"images/4_3_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_4_size_675x1200.jpg", smallImgUrl: "images/4_4_size_400x711.jpg", thumb:"images/4_4_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_5_size_675x1200.jpg", smallImgUrl: "images/4_5_size_400x711.jpg", thumb:"images/4_5_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_6_size_801x1200.jpg", smallImgUrl: "images/4_6_size_400x599.jpg", thumb:"images/4_6_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_7_size_801x1200.jpg", smallImgUrl: "images/4_7_size_400x599.jpg", thumb:"images/4_7_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_8_size_1200x800.jpg", smallImgUrl: "images/4_8_size_600x400.jpg", thumb:"images/4_8_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_9_size_972x1200.jpg", smallImgUrl: "images/4_9_size_400x494.jpg", thumb:"images/4_9_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_10_size_959x1200.jpg", smallImgUrl: "images/4_10_size_400x501.jpg", thumb:"images/4_10_400.jpg", photoSwipeIndex: undefined },      
         ]
     },{
         description: { 
@@ -104,12 +105,12 @@ let data:BoardDetails[] =
             kicks: ""
         },
         images: [
-            {imageUrl:"", thumb:"images/3_1_400.jpg", photoSwipeIndex: undefined },
-            {imageUrl:"", thumb:"images/3_2_400.jpg", photoSwipeIndex: undefined },
-            {imageUrl:"", thumb:"images/3_3_400.jpg", photoSwipeIndex: undefined },           
-            {imageUrl:"", thumb:"images/3_4_400.jpg", photoSwipeIndex: undefined },          
-            {imageUrl:"", thumb:"images/3_5_400.jpg", photoSwipeIndex: undefined },        
-            {imageUrl:"", thumb:"images/3_6_400.jpg", photoSwipeIndex: undefined },        
+            {largeImgUrl:"images/3_1_size_1200x800.jpg", smallImgUrl: "images/3_1_size_600x400.jpg", thumb:"images/3_1_400.jpg", photoSwipeIndex: undefined },
+            {largeImgUrl:"images/3_2_size_800x1200.jpg", smallImgUrl: "images/3_2_size_400x600.jpg", thumb:"images/3_2_400.jpg", photoSwipeIndex: undefined },
+            {largeImgUrl:"images/3_3_size_800x1200.jpg", smallImgUrl: "images/3_3_size_400x600.jpg", thumb:"images/3_3_400.jpg", photoSwipeIndex: undefined },           
+            {largeImgUrl:"images/3_4_size_800x1200.jpg", smallImgUrl: "images/3_4_size_400x600.jpg", thumb:"images/3_4_400.jpg", photoSwipeIndex: undefined },          
+            {largeImgUrl:"images/3_5_size_1200x800.jpg", smallImgUrl: "images/3_5_size_600x400.jpg", thumb:"images/3_5_400.jpg", photoSwipeIndex: undefined },        
+            {largeImgUrl:"images/3_6_size_1200x800.jpg", smallImgUrl: "images/3_6_size_600x400.jpg", thumb:"images/3_6_400.jpg", photoSwipeIndex: undefined },        
         ]
     }, {
         description: { 
@@ -129,11 +130,12 @@ let data:BoardDetails[] =
             kicks: ""
         },
         images: [
-            {imageUrl:"", thumb:"images/2_0_400.jpg", photoSwipeIndex: undefined },
-            {imageUrl:"", thumb:"images/2_3_400.jpg", photoSwipeIndex: undefined },
-            {imageUrl:"", thumb:"images/2_2_400.jpg", photoSwipeIndex: undefined },
-            {imageUrl:"", thumb:"images/2_1_400.jpg", photoSwipeIndex: undefined },
-            {imageUrl:"", thumb:"images/2_5_400.jpg", photoSwipeIndex: undefined }
+            {largeImgUrl:"images/2_0_size_1200x803.jpg", smallImgUrl: "images/2_0_size_598x400.jpg", thumb:"images/2_0_400.jpg", photoSwipeIndex: undefined },
+            {largeImgUrl:"images/2_3_size_800x1200.jpg", smallImgUrl: "images/2_3_size_400x600.jpg", thumb:"images/2_3_400.jpg", photoSwipeIndex: undefined },
+            {largeImgUrl:"images/2_2_size_800x1200.jpg", smallImgUrl: "images/2_2_size_400x600.jpg", thumb:"images/2_2_400.jpg", photoSwipeIndex: undefined },
+            {largeImgUrl:"images/2_1_size_1200x803.jpg", smallImgUrl: "images/2_1_size_598x400.jpg", thumb:"images/2_1_400.jpg", photoSwipeIndex: undefined },
+            {largeImgUrl:"images/2_4_size_803x1200.jpg", smallImgUrl: "images/2_4_size_400x598.jpg", thumb:"images/2_4_400.jpg", photoSwipeIndex: undefined },
+            {largeImgUrl:"images/2_5_size_801x1200.jpg", smallImgUrl: "images/2_5_size_400x599.jpg", thumb:"images/2_5_400.jpg", photoSwipeIndex: undefined }
         ]
     },  {
         description: { 
@@ -153,10 +155,10 @@ let data:BoardDetails[] =
             kicks: ""
         },
         images: [
-            {imageUrl:"images/1_1.jpg", thumb:"images/1_1_400.jpg", photoSwipeIndex: undefined },      
-            {imageUrl:"images/1_2.jpg", thumb:"images/1_2_400.jpg", photoSwipeIndex: undefined },      
-            {imageUrl:"images/1_3.jpg", thumb:"images/1_3_400.jpg", photoSwipeIndex: undefined },      
-            {imageUrl:"images/1_4.jpg", thumb:"images/1_4_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/1_1_size_900x1200.jpg", smallImgUrl: "images/1_1_size_400x533.jpg", thumb:"images/1_1_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/1_2_size_900x1200.jpg", smallImgUrl: "images/1_2_size_400x533.jpg", thumb:"images/1_2_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/1_3_size_1200x900.jpg", smallImgUrl: "images/1_3_size_533x400.jpg", thumb:"images/1_3_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/1_4_size_1200x900.jpg", smallImgUrl: "images/1_4_size_533x400.jpg", thumb:"images/1_4_400.jpg", photoSwipeIndex: undefined },      
         ]
     }    
 ];

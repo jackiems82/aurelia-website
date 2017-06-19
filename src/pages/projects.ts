@@ -35,8 +35,8 @@ export class Projects{
                 element.images.forEach(image => {
                     image.photoSwipeIndex = idx;
                     idx++;
-                    this.model.smallImages.push({ url: image.thumb })
-                    this.model.largeImages.push({ url: image.imageUrl })
+                    this.model.smallImages.push({ url: image.smallImgUrl })
+                    this.model.largeImages.push({ url: image.largeImgUrl })
                 })
             });
             console.log("RESULT: ", result);
@@ -71,16 +71,58 @@ export class Projects{
             var rect = thumbnails[0].getBoundingClientRect();
 
             this.boardDetails[i].images.forEach(image => {
+                let width: number = 1200, height: number = 800;
+                
+                // FileName: "imageName_size_1200x800.jpg"
+                let lrgImg = this.model.largeImages[image.photoSwipeIndex].url
+                          .replace(/\.[^/.]+$/, "") // remove file extension
+                          .split("size_");
+   
+                // "1200x800"
+                if (lrgImg.length == 2)
+                {
+                    let measures = lrgImg[1].split("x");
+                    width = Number(measures[0]);
+                    height = Number(measures[1]);
+                }
+
+                // Small image sizes needed to position the small image over the thumbnail when the animation starts.
+                let smlImg = this.model.smallImages[image.photoSwipeIndex].url
+                          .replace(/\.[^/.]+$/, "") // remove file extension
+                          .split("size_");
+
+                let smlWidth = 0;
+                let smlHeight = 0;
+                if (smlImg.length == 2)
+                {
+                    let measures = smlImg[1].split("x");
+                    smlWidth = Number(measures[0]);
+                    smlHeight = Number(measures[1]);
+                }
+
+                // The offsets center the initial shown image over the thumbnail
+                let heightoffset = (smlHeight - rect.width) / 2;
+                let widthOffset = 0;
+                // Needed to scale the image up to the height of the thumbnail (only for landscape)
+                let widthAdaption = 0;
+
+                // If landscape format
+                if (height < width)
+                {
+                    heightoffset = 0;
+                    widthOffset = (smlWidth - rect.width) / 2;
+                    widthAdaption = smlWidth - rect.width;
+                }
+
+                // Add the image information to array for the photoSwipe items
                 items.push({
                     src: this.model.largeImages[image.photoSwipeIndex].url,
                     msrc: this.model.smallImages[image.photoSwipeIndex].url,
-                    w: 2136,
-                    h: 2848,
-                    thumbBounds: { x: rect.left, y: rect.top + pageYScroll, w: rect.width }
+                    w: width,
+                    h: height,
+                    thumbBounds: { x: rect.left - widthOffset, y: rect.top + pageYScroll - heightoffset, w: rect.width + widthAdaption}
                 });
             })  
-                
-            
         }
         
         this.ps.items = items;
