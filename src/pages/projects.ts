@@ -101,18 +101,17 @@ export class Projects{
                 }
 
                 // The offsets center the initial shown image over the thumbnail
-                let heightoffset = (smlHeight - rect.width) / 2;
-                let widthOffset = 0;
-                // Needed to scale the image up to the height of the thumbnail (only for landscape)
-                let widthAdaption = 0;
+                let topOffset = (smlHeight - rect.width) / 2;
+                let leftOffset = (smlWidth - rect.width) / 2;                
 
-                // If landscape format
-                if (height < width)
-                {
-                    heightoffset = 0;
-                    widthOffset = (smlWidth - rect.width) / 2;
-                    widthAdaption = smlWidth - rect.width;
-                }
+                // Needed to scale the image to the size of the thumbnail
+                let widthAdaption = smlWidth - rect.width;
+                let heightAdaption = 0;
+
+                // If portrait format also correct the starting point of the animation image
+                if (height > width)
+                    heightAdaption = smlHeight - rect.height;
+                
 
                 // Add the image information to array for the photoSwipe items
                 items.push({
@@ -120,7 +119,10 @@ export class Projects{
                     msrc: this.model.smallImages[image.photoSwipeIndex].url,
                     w: width,
                     h: height,
-                    thumbBounds: { x: rect.left - widthOffset, y: rect.top + pageYScroll - heightoffset, w: rect.width + widthAdaption}
+                    thumbBounds: { x: rect.left - leftOffset, 
+                                   y: rect.top + pageYScroll - topOffset, 
+                                   w: rect.width + widthAdaption
+                    }
                 });
             })  
         }
