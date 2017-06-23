@@ -11,7 +11,7 @@
             </div>
             <div class="col-sm-4">
                 <div repeat.for="image of model.mediumImages" if.bind="model.mediumImages.length > 0">
-                    <img src.bind="image.url" class="center-block photoswipe" click.trigger="clickImage({$index})" />
+                    <img src.bind="image.url" class="center-block photoswipe clickable" click.trigger="clickImage({$index})" />
                 </div>
             </div>
             

@@ -15,7 +15,8 @@ export class Projects{
     constructor(private api: WebApi, private i18n: I18N) {
         this.i18n = i18n;
 
-        if (this.i18n.getLocale() != "de")
+        // If the current locale is not any type of german, load the english texts.
+        if (!(this.i18n.getLocale().indexOf("de") >= 0))
             this.showInEnglish = true;   
 
         this.model = new ImageModel();
@@ -132,11 +133,10 @@ export class Projects{
 
     clickImage(id: any) {
         console.log("CLick");
-        var index = id;
         if (!this.ps.items) {
             this.createImageList();
         }
-        this.ps.test_ps(index);
+        this.ps.test_ps(id);
     }
  
 }

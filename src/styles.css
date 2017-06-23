@@ -13,6 +13,10 @@ html {
 body {
   background-color: #f3f3f3;
 }
+.clickable{    
+    cursor: pointer; 
+    cursor: hand; 
+}
 
 /* wrap long link text */
 .long-link{

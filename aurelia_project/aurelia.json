@@ -190,10 +190,10 @@
           },
           {
             "name": "photoswipe",
-            "main": "photoswipe",
+            "main": "photoswipe.min",
             "path": "../node_modules/photoswipe/dist/",
             "resources": [
-              "photoswipe-ui-default.js",
+              "photoswipe-ui-default.min.js",
               "photoswipe.css",
               "default-skin/default-skin.css"
             ]

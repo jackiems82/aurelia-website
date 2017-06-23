@@ -67,7 +67,7 @@ let data:BoardDetails[] =
             },
             en:{
                 header: "3 Boards" , 
-                text:"3 Boards, similar in style, different in design, with unique statements. This time, I was allowed to build longboard decks for friends, according to their wishes and expectations. Particularly cities and hobbies were decisive for the prints.",
+                text:"3 boards, similar in style, different in design, with unique statements. This time, I was allowed to build longboard decks for friends, according to their wishes and expectations. Particularly cities and hobbies were decisive for the prints.",
                 structureText: "Made in a vacuum process, birch plywood with poplar core and glass fibers. A special feature is the clear grip on one deck, which showcases particularly the upper side.",
             },
             size: "",
@@ -76,16 +76,16 @@ let data:BoardDetails[] =
             kicks: ""
         },
         images: [
-            {largeImgUrl:"images/4_1_size_1200x675.jpg", smallImgUrl: "images/4_1_size_711x400.jpg", thumb:"images/4_1_400.jpg", photoSwipeIndex: undefined },      
-            {largeImgUrl:"images/4_2_size_1422x400.jpg", smallImgUrl: "images/4_2_size_1422x400.jpg", thumb:"images/4_2_400.jpg", photoSwipeIndex: undefined },      
-            {largeImgUrl:"images/4_3_size_1200x675.jpg", smallImgUrl: "images/4_3_size_711x400.jpg", thumb:"images/4_3_400.jpg", photoSwipeIndex: undefined },      
-            {largeImgUrl:"images/4_4_size_675x1200.jpg", smallImgUrl: "images/4_4_size_400x711.jpg", thumb:"images/4_4_400.jpg", photoSwipeIndex: undefined },      
-            {largeImgUrl:"images/4_5_size_675x1200.jpg", smallImgUrl: "images/4_5_size_400x711.jpg", thumb:"images/4_5_400.jpg", photoSwipeIndex: undefined },      
-            {largeImgUrl:"images/4_6_size_801x1200.jpg", smallImgUrl: "images/4_6_size_400x599.jpg", thumb:"images/4_6_400.jpg", photoSwipeIndex: undefined },      
-            {largeImgUrl:"images/4_7_size_801x1200.jpg", smallImgUrl: "images/4_7_size_400x599.jpg", thumb:"images/4_7_400.jpg", photoSwipeIndex: undefined },      
-            {largeImgUrl:"images/4_8_size_1200x800.jpg", smallImgUrl: "images/4_8_size_600x400.jpg", thumb:"images/4_8_400.jpg", photoSwipeIndex: undefined },      
-            {largeImgUrl:"images/4_9_size_972x1200.jpg", smallImgUrl: "images/4_9_size_400x494.jpg", thumb:"images/4_9_400.jpg", photoSwipeIndex: undefined },      
-            {largeImgUrl:"images/4_10_size_959x1200.jpg", smallImgUrl: "images/4_10_size_400x501.jpg", thumb:"images/4_10_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_1_size_1500x844.jpg", smallImgUrl: "images/4_1_size_711x400.jpg", thumb:"images/4_1_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_2_size_1500x422.jpg", smallImgUrl: "images/4_2_size_1422x400.jpg", thumb:"images/4_2_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_3_size_1500x844.jpg", smallImgUrl: "images/4_3_size_711x400.jpg", thumb:"images/4_3_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_4_size_844x1500.jpg", smallImgUrl: "images/4_4_size_400x711.jpg", thumb:"images/4_4_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_5_size_844x1500.jpg", smallImgUrl: "images/4_5_size_400x711.jpg", thumb:"images/4_5_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_6_size_1001x1500.jpg", smallImgUrl: "images/4_6_size_400x599.jpg", thumb:"images/4_6_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_7_size_1001x1500.jpg", smallImgUrl: "images/4_7_size_400x599.jpg", thumb:"images/4_7_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_8_size_1500x1000.jpg", smallImgUrl: "images/4_8_size_600x400.jpg", thumb:"images/4_8_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_9_size_1215x1500.jpg", smallImgUrl: "images/4_9_size_400x494.jpg", thumb:"images/4_9_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/4_10_size_1198x1500.jpg", smallImgUrl: "images/4_10_size_400x501.jpg", thumb:"images/4_10_400.jpg", photoSwipeIndex: undefined },      
         ]
     },{
         description: { 
@@ -105,12 +105,12 @@ let data:BoardDetails[] =
             kicks: ""
         },
         images: [
-            {largeImgUrl:"images/3_1_size_1200x800.jpg", smallImgUrl: "images/3_1_size_600x400.jpg", thumb:"images/3_1_400.jpg", photoSwipeIndex: undefined },
-            {largeImgUrl:"images/3_2_size_800x1200.jpg", smallImgUrl: "images/3_2_size_400x600.jpg", thumb:"images/3_2_400.jpg", photoSwipeIndex: undefined },
-            {largeImgUrl:"images/3_3_size_800x1200.jpg", smallImgUrl: "images/3_3_size_400x600.jpg", thumb:"images/3_3_400.jpg", photoSwipeIndex: undefined },           
-            {largeImgUrl:"images/3_4_size_800x1200.jpg", smallImgUrl: "images/3_4_size_400x600.jpg", thumb:"images/3_4_400.jpg", photoSwipeIndex: undefined },          
-            {largeImgUrl:"images/3_5_size_1200x800.jpg", smallImgUrl: "images/3_5_size_600x400.jpg", thumb:"images/3_5_400.jpg", photoSwipeIndex: undefined },        
-            {largeImgUrl:"images/3_6_size_1200x800.jpg", smallImgUrl: "images/3_6_size_600x400.jpg", thumb:"images/3_6_400.jpg", photoSwipeIndex: undefined },        
+            {largeImgUrl:"images/3_1_size_1500x1000.jpg", smallImgUrl: "images/3_1_size_600x400.jpg", thumb:"images/3_1_400.jpg", photoSwipeIndex: undefined },
+            {largeImgUrl:"images/3_2_size_1000x1500.jpg", smallImgUrl: "images/3_2_size_400x600.jpg", thumb:"images/3_2_400.jpg", photoSwipeIndex: undefined },
+            {largeImgUrl:"images/3_3_size_1000x1500.jpg", smallImgUrl: "images/3_3_size_400x600.jpg", thumb:"images/3_3_400.jpg", photoSwipeIndex: undefined },           
+            {largeImgUrl:"images/3_4_size_1000x1500.jpg", smallImgUrl: "images/3_4_size_400x600.jpg", thumb:"images/3_4_400.jpg", photoSwipeIndex: undefined },          
+            {largeImgUrl:"images/3_5_size_1500x1000.jpg", smallImgUrl: "images/3_5_size_600x400.jpg", thumb:"images/3_5_400.jpg", photoSwipeIndex: undefined },        
+            {largeImgUrl:"images/3_6_size_1500x1000.jpg", smallImgUrl: "images/3_6_size_600x400.jpg", thumb:"images/3_6_400.jpg", photoSwipeIndex: undefined },        
         ]
     }, {
         description: { 
@@ -130,12 +130,12 @@ let data:BoardDetails[] =
             kicks: ""
         },
         images: [
-            {largeImgUrl:"images/2_0_size_1200x803.jpg", smallImgUrl: "images/2_0_size_598x400.jpg", thumb:"images/2_0_400.jpg", photoSwipeIndex: undefined },
-            {largeImgUrl:"images/2_3_size_800x1200.jpg", smallImgUrl: "images/2_3_size_400x600.jpg", thumb:"images/2_3_400.jpg", photoSwipeIndex: undefined },
-            {largeImgUrl:"images/2_2_size_800x1200.jpg", smallImgUrl: "images/2_2_size_400x600.jpg", thumb:"images/2_2_400.jpg", photoSwipeIndex: undefined },
-            {largeImgUrl:"images/2_1_size_1200x803.jpg", smallImgUrl: "images/2_1_size_598x400.jpg", thumb:"images/2_1_400.jpg", photoSwipeIndex: undefined },
-            {largeImgUrl:"images/2_4_size_803x1200.jpg", smallImgUrl: "images/2_4_size_400x598.jpg", thumb:"images/2_4_400.jpg", photoSwipeIndex: undefined },
-            {largeImgUrl:"images/2_5_size_801x1200.jpg", smallImgUrl: "images/2_5_size_400x599.jpg", thumb:"images/2_5_400.jpg", photoSwipeIndex: undefined }
+            {largeImgUrl:"images/2_0_size_1500x1004.jpg", smallImgUrl: "images/2_0_size_598x400.jpg", thumb:"images/2_0_400.jpg", photoSwipeIndex: undefined },
+            {largeImgUrl:"images/2_3_size_1000x1500.jpg", smallImgUrl: "images/2_3_size_400x600.jpg", thumb:"images/2_3_400.jpg", photoSwipeIndex: undefined },
+            {largeImgUrl:"images/2_2_size_1000x1500.jpg", smallImgUrl: "images/2_2_size_400x600.jpg", thumb:"images/2_2_400.jpg", photoSwipeIndex: undefined },
+            {largeImgUrl:"images/2_1_size_1500x1004.jpg", smallImgUrl: "images/2_1_size_598x400.jpg", thumb:"images/2_1_400.jpg", photoSwipeIndex: undefined },
+            {largeImgUrl:"images/2_4_size_1004x1500.jpg", smallImgUrl: "images/2_4_size_400x598.jpg", thumb:"images/2_4_400.jpg", photoSwipeIndex: undefined },
+            {largeImgUrl:"images/2_5_size_1001x1500.jpg", smallImgUrl: "images/2_5_size_400x599.jpg", thumb:"images/2_5_400.jpg", photoSwipeIndex: undefined }
         ]
     },  {
         description: { 
@@ -155,10 +155,10 @@ let data:BoardDetails[] =
             kicks: ""
         },
         images: [
-            {largeImgUrl:"images/1_1_size_900x1200.jpg", smallImgUrl: "images/1_1_size_400x533.jpg", thumb:"images/1_1_400.jpg", photoSwipeIndex: undefined },      
-            {largeImgUrl:"images/1_2_size_900x1200.jpg", smallImgUrl: "images/1_2_size_400x533.jpg", thumb:"images/1_2_400.jpg", photoSwipeIndex: undefined },      
-            {largeImgUrl:"images/1_3_size_1200x900.jpg", smallImgUrl: "images/1_3_size_533x400.jpg", thumb:"images/1_3_400.jpg", photoSwipeIndex: undefined },      
-            {largeImgUrl:"images/1_4_size_1200x900.jpg", smallImgUrl: "images/1_4_size_533x400.jpg", thumb:"images/1_4_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/1_1_size_1125x1500.jpg", smallImgUrl: "images/1_1_size_400x533.jpg", thumb:"images/1_1_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/1_2_size_1125x1500.jpg", smallImgUrl: "images/1_2_size_400x533.jpg", thumb:"images/1_2_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/1_3_size_1500x1125.jpg", smallImgUrl: "images/1_3_size_533x400.jpg", thumb:"images/1_3_400.jpg", photoSwipeIndex: undefined },      
+            {largeImgUrl:"images/1_4_size_1500x1125.jpg", smallImgUrl: "images/1_4_size_533x400.jpg", thumb:"images/1_4_400.jpg", photoSwipeIndex: undefined },      
         ]
     }    
 ];

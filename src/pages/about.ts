@@ -35,8 +35,8 @@ export class About {
             items.push({
                 src: this.model.largeImages[n].url,
                 msrc: this.model.smallImages[n].url,
-                w: 2597,
-                h: 3872,
+                w: 805,
+                h: 1200,
                 thumbBounds: { x: rect.left, y: rect.top + pageYScroll, w: rect.width }
             });
         }
