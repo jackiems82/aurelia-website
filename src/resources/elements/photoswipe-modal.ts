@@ -67,7 +67,7 @@ export class PhotoswipeModal {
             indexIndicatorSep: ' / ',
 
             shareButtons: [
-                {id: 'facebook', label: 'Share on Facebook', url: 'https://www.facebook.com/sharer/sharer.php?u={{url}}'},
+                {id: 'facebook', label: 'Facebook', url: 'https://www.facebook.com/sharer/sharer.php?u={{url}}'},
                 {id: 'twitter', label: 'Twitter', url: 'https://twitter.com/intent/tweet?text={{text}}&url={{url}}'},
                 {id: 'pinterest', label: 'Pinterest', url: 'http://www.pinterest.com/pin/create/button/?url={{url}}&media={{image_url}}&description={{text}}'},
             ],
