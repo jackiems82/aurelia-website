@@ -8,6 +8,7 @@ import { autoinject} from 'aurelia-framework';
 @autoinject
 export class Projects{
     ps: any;
+    pid: number;
     model: ImageModel;
     boardDetails: BoardDetails[];
     showInEnglish: boolean;
@@ -49,7 +50,7 @@ export class Projects{
             // Optional parameters
             direction: 'horizontal',
             loop: true,
-            autoplay: 5000,
+            // autoplay: 7500,
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
             pagination: '.swiper-pagination',
@@ -58,6 +59,24 @@ export class Projects{
             lazyLoadingInPrevNext: true,
             centeredSlides: true            
         });
+
+        // Create photoswipe image list
+        if (!this.ps.items) {
+            this.createImageList();
+        }
+
+        // Parse URL and open gallery if it contains #&pid=3&gid=1
+        let params = this.ps.photoswipeParseHash();
+
+        // Currently there is only one gallery, so that index will always be 1
+        if (params.pid)
+            this.ps.openPhotoSwipe(params.pid);  
+    }
+
+    
+    clickImage(id: number) {
+        console.log("CLick");        
+        this.ps.openPhotoSwipe(id);
     }
  
     createImageList() {
@@ -129,14 +148,5 @@ export class Projects{
         }
         
         this.ps.items = items;
-    }
-
-    clickImage(id: any) {
-        console.log("CLick");
-        if (!this.ps.items) {
-            this.createImageList();
-        }
-        this.ps.test_ps(id);
-    }
- 
+    } 
 }

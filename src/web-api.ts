@@ -9,13 +9,11 @@ export class WebApi{
 
     public getImageDetails(): Promise<BoardDetails[]> {  
         let promise = new Promise((resolve, reject) => {
-            if(!this.boardDetails) {
+            
+            if(!this.boardDetails) 
                 this.boardDetails = data;
-                resolve(this.boardDetails);
-            }
-            else {
-                resolve(this.boardDetails);
-            }
+
+            resolve(this.boardDetails);            
         });
 
         return promise;

@@ -9,9 +9,12 @@
             <div class="col-sm-7 col-sm-offset-1 about-content">                
                 <div t="[html]about.content">About</div>
             </div>
-            <div class="col-sm-4">
-                <div repeat.for="image of model.mediumImages" if.bind="model.mediumImages.length > 0">
-                    <img src.bind="image.url" class="center-block photoswipe clickable" click.trigger="clickImage({$index})" />
+            <div class="col-sm-4">                
+                <div class="center-block photoswipe" style="width: 230px;">
+                    <div repeat.for="image of model.mediumImages" if.bind="model.mediumImages.length > 0">
+                        <img src.bind="image.url" class="clickable" 
+                         click.trigger="clickImage({$index})" />
+                    </div>                    
                 </div>
             </div>
             

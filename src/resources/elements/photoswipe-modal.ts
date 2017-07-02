@@ -30,7 +30,7 @@ export class PhotoswipeModal {
     {
     }
 
-    test_ps = (index: number) => {
+    openPhotoSwipe = (index: number) => {
         var pswpElement = this.gallery;
         // var pswpElement = document.getElementById('gallery');
 
@@ -66,6 +66,12 @@ export class PhotoswipeModal {
             closeElClasses: ['item', 'caption', 'zoom-wrap', 'ui', 'top-bar'],
             indexIndicatorSep: ' / ',
 
+            shareButtons: [
+                {id: 'facebook', label: 'Share on Facebook', url: 'https://www.facebook.com/sharer/sharer.php?u={{url}}'},
+                {id: 'twitter', label: 'Twitter', url: 'https://twitter.com/intent/tweet?text={{text}}&url={{url}}'},
+                {id: 'pinterest', label: 'Pinterest', url: 'http://www.pinterest.com/pin/create/button/?url={{url}}&media={{image_url}}&description={{text}}'},
+            ],
+
             //// uncomment to display inline in a div
             //modal: false,
             //closeOnScroll: false,
@@ -80,4 +86,32 @@ export class PhotoswipeModal {
 
         gallery.init();
     }
+
+    // parse picture index and gallery index from URL (#&pid=1&gid=2)
+    photoswipeParseHash = function() {
+        var hash = window.location.hash.substring(1),
+        params:any = {};
+
+        if(hash.length < 5) {
+            return params;
+        }
+
+        var vars = hash.split('&');
+        for (var i = 0; i < vars.length; i++) {
+            if(!vars[i]) {
+                continue;
+            }
+            var pair = vars[i].split('=');  
+            if(pair.length < 2) {
+                continue;
+            }           
+            params[pair[0]] = pair[1];
+        }
+
+        if(params.gid) {
+            params.gid = parseInt(params.gid, 10);
+        }
+
+        return params;
+    };
 }
