@@ -66,8 +66,15 @@ export class PhotoswipeModal {
             closeElClasses: ['item', 'caption', 'zoom-wrap', 'ui', 'top-bar'],
             indexIndicatorSep: ' / ',
 
+            // Share buttons
+            // 
+            // Available variables for URL:
+            // {{url}}             - url to current page
+            // {{text}}            - title
+            // {{image_url}}       - encoded image url
+            // {{raw_image_url}}   - raw image url
             shareButtons: [
-                {id: 'facebook', label: 'Facebook', url: 'https://www.facebook.com/sharer/sharer.php?u={{url}}'},
+                {id: 'facebook', label: 'Facebook', url: 'https://www.facebook.com/sharer/sharer.php?u={{image_url}}'},
                 {id: 'twitter', label: 'Twitter', url: 'https://twitter.com/intent/tweet?text={{text}}&url={{url}}'},
                 {id: 'pinterest', label: 'Pinterest', url: 'http://www.pinterest.com/pin/create/button/?url={{url}}&media={{image_url}}&description={{text}}'},
             ],
