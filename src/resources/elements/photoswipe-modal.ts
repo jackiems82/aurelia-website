@@ -74,7 +74,7 @@ export class PhotoswipeModal {
             // {{image_url}}       - encoded image url
             // {{raw_image_url}}   - raw image url
             shareButtons: [
-                {id: 'facebook', label: 'Facebook', url: 'https://www.facebook.com/sharer/sharer.php?u={{image_url}}'},
+                {id: 'facebook', label: 'Facebook', url: 'https://www.facebook.com/sharer/sharer.php?u={{url}}'},
                 {id: 'twitter', label: 'Twitter', url: 'https://twitter.com/intent/tweet?text={{text}}&url={{url}}'},
                 {id: 'pinterest', label: 'Pinterest', url: 'http://www.pinterest.com/pin/create/button/?url={{url}}&media={{image_url}}&description={{text}}'},
             ],
