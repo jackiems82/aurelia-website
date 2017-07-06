@@ -74,8 +74,7 @@ export class Projects{
     }
 
     
-    clickImage(id: number) {
-        console.log("CLick");        
+    clickImage(id: number) {        
         this.ps.openPhotoSwipe(id);
     }
  

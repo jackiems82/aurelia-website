@@ -13,9 +13,11 @@ html {
 body {
   background-color: #f3f3f3;
 }
-.clickable{    
+.clickable{  
+    position: relative;  
     cursor: pointer; 
     cursor: hand; 
+    z-index: 1;
 }
 
 /* wrap long link text */
@@ -38,8 +40,7 @@ body {
    margin-top:30px;
 }
 /* This is needed to move the links in front of the footer an make them clickable. */
-#body a,
-#body .swiper-lazy {
+#body a {
     position: relative;
     z-index: 1;
 }

@@ -55,12 +55,10 @@ export class About {
         this.ps.items = items;
     }
 
-    clickImage(id: any) {
-        console.log("CLick");
-        var index = id.index; 
+    clickImage(id: number) {
         if (!this.ps.items) {
             this.createImageList();
         }       
-        this.ps.openPhotoSwipe(index);
+        this.ps.openPhotoSwipe(id);
     }
 }
